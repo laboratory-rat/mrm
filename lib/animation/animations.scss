@@ -1,0 +1,98 @@
+// mixin
+@mixin animation-timing-function($function) {
+    animation-timing-function: $function;
+    -o-animation-timing-function: $function;
+    -webkit-animation-timing-function: $function;
+    -moz-animation-timing-function: $function;
+}
+
+@mixin animation-name($name) {
+    animation-name: $name;
+    -o-animation-name: $name;
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+}
+
+@mixin animation-duration($d) {
+    animation-duration: $d;
+    -o-animation-duration: $d;
+    -webkit-animation-duration: $d;
+    -moz-animation-duration: $d;
+}
+
+// durations
+.mrm-anim--dur-long {
+    @include animation-duration($animDurationLong);
+}
+
+.mrm-anim--dur-short {
+    @include animation-duration($animDurationShort);
+}
+
+// durations end
+// functions
+.mrm-anim--func-standart {
+    @include animation-timing-function($animFunctionStandart);
+}
+
+.mrm-anim--func-deceleration {
+    @include animation-timing-function($animFunctionDeceleration);
+}
+
+.mrm-anim--func-acceleration {
+    @include animation-timing-function($animFunctionAcceleration);
+}
+
+.mrm-anim--func-sharp {
+    @include animation-timing-function($animFunctionSharp);
+}
+
+// functions end
+// animations
+.mrm-anim--app-fade {
+    @include animation-name(mrm-frames--appear-fade);
+}
+
+.mrm-anim--app-scale {
+    @include animation-name(mrm-frames--appear-scale);
+}
+
+.mrm-anim--app-slide-top {
+    @include animation-name(mrm-frames--appear-fade-slide-top);
+}
+
+.mrm-anim--app-slide-left {
+    @include animation-name(mrm-frames--appear-fade-slide-left);
+}
+
+.mrm-anim--left-fade {
+    @include animation-name(mrm-frames--appear-fade);
+    animation-direction: reverse;
+}
+
+.mrm-anim--left-scale {
+    @include animation-name(mrm-frames--appear-scale);
+    animation-direction: reverse;
+}
+
+// animations end
+// full animations
+.mrm-a--slide-top {
+    @extend .mrm-anim--app-slide-top;
+    @extend .mrm-anim--dur-long;
+    @extend .mrm-anim--func-standart;
+}
+
+.mrm-a--slide-left {
+    @extend .mrm-anim--app-slide-left;
+    @extend .mrm-anim--dur-long;
+    @extend .mrm-anim--func-standart;
+}
+
+.mrm-a--scale {
+    @extend .mrm-anim--app-scale;
+    @extend .mrm-anim--dur-long;
+    @extend .mrm-anim--func-standart;
+}
+
+// full animations

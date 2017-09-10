@@ -1,0 +1,15 @@
+.mrm-card{
+    background-color: unquote("rgb(#{$color-white})");
+    min-height: 128px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.mrm-card>.media{
+    min-height: 64px;
+}
+
+.mrm-card>.content{
+    display: block;
+    margin: 32px 16px 32px 16px;
+}

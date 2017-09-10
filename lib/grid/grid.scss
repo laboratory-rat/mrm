@@ -1,0 +1,91 @@
+// grid
+.mrm-grid {
+    display: grid;
+    grid-template-columns: repeat($colsMobile, 1fr);
+    grid-column-gap: $gapMobile;
+    grid-row-gap: $gapRowMobile;
+    grid-auto-rows: minmax(24px, auto);
+    grid-auto-flow: row;
+    padding: 0 16px 0 16px;
+}
+
+.mrm-grid--flow-column{
+    grid-auto-flow: column;
+}
+
+
+// cell
+.mrm-cell {
+    grid-column: auto / span 1;
+    min-height: $cellMinHeight;
+    padding: 0;
+    display: block;
+}
+
+.mrm-cell.top{
+    align-self: start;
+}
+
+.mrm-cell.center{
+    align-self: center;
+}
+
+.mrm-cell.bottom{
+    align-self: end;
+}
+
+
+@media(min-width: $breakpointTablet) {
+    .mrm-grid {
+        grid-template-columns: repeat($colsTablet, 1fr);
+        grid-column-gap: $gapTablet;
+        grid-row-gap: $gapRowTablet;
+        padding: 0 24px 0 24px;
+    }
+    @for $i from $colsTablet through length(2) {
+        .mrm-cell.col-#{$i}--tab {
+            grid-column: auto / span $i;
+        }
+    }
+}
+
+@media(max-width: $breakpointDesktop){
+    @for $i from $colsTablet through length(2) {
+        .mrm-cell.col-#{$i}--tab {
+            grid-column: auto / span $i;
+        }
+    }
+}
+
+@media(min-width: $breakpointDesktop) {
+    .mrm-grid {
+        grid-template-columns: repeat($colsDesktop, 1fr);
+        grid-column-gap: $gapDesctop;
+        grid-row-gap: $gapRowDesctop;
+    }
+    @for $i from $colsDesktop through length(2) {
+        .mrm-cell.col-#{$i}--desk {
+            grid-column: auto / span $i;
+        }
+    }
+}
+
+@media (max-width: $breakpointTablet){
+    @for $i from $colsMobile through length(2) {
+        .mrm-cell.col-#{$i}--mob {
+            grid-column: auto / span $i;
+        }
+    }
+}
+
+.mrm-grid.no-padding{
+    padding: 0;
+}
+
+.mrm-grid.auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+
+.mrm-grid.auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}

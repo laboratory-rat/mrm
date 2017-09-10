@@ -1,0 +1,45 @@
+/* cols */
+
+$colsDesktop: 12;
+$colsTablet: 8;
+$colsMobile: 4;
+
+/* gaps */
+
+$gapMobile: 16px;
+$gapTablet: 16px;
+$gapDesctop: 24px;
+
+$gapRowMobile: 8px;
+$gapRowTablet: 8px;
+$gapRowDesctop: 8px;
+
+/* break points */
+
+$breakpointTablet: 640px;
+$breakpointDesktop: 960px;
+
+/* cell */
+
+$cellMinHeight: 16px;
+
+/* margins list */
+
+$margins: 8, 16, 24;
+
+/* animations */
+
+// animation durations
+$animDurationLong: .375s;
+$animDurationShort: .225s;
+// animation functions
+$animFunctionStandart: cubic-bezier(0.4, 0.0, 0.2, 1);
+$animFunctionDeceleration: cubic-bezier(0.0, 0.0, 0.2, 1);
+$animFunctionAcceleration: cubic-bezier(0.4, 0.0, 1, 1);
+$animFunctionSharp: cubic-bezier(0.4, 0.0, 0.6, 1);
+
+/* Shadows */
+
+$shadowKeyUmbraOpacity: 0.2 !default;
+$shadowKeyPenumbraOpacity: 0.14 !default;
+$shadowAmbientShadowOpacity: 0.12 !default;
