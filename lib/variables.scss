@@ -43,3 +43,15 @@ $animFunctionSharp: cubic-bezier(0.4, 0.0, 0.6, 1);
 $shadowKeyUmbraOpacity: 0.2 !default;
 $shadowKeyPenumbraOpacity: 0.14 !default;
 $shadowAmbientShadowOpacity: 0.12 !default;
+
+/* Cards */
+$cardMinHeight: 128px;
+$cardBorderRadius: 2px;
+$cardMediaMinHeight: 128px;
+$cardContentMargin: 32px 16px;
+$cardMediaMinHeight: 64, 128, 196, 256;
+$cardMediaMinHeightDefault: 128;
+
+/* Colors */
+$palettePrimary: $paletteAmber-500;
+$paletteAccent: $paletteBlue-500;

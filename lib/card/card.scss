@@ -1,15 +1,75 @@
+/* cards basic */
+
 .mrm-card{
-    background-color: unquote("rgb(#{$color-white})");
-    min-height: 128px;
+    background-color: $paletteWhite;
+    min-height: $cardMinHeight;
     position: relative;
-    border-radius: 2px;
+    border-radius: $cardBorderRadius;
+}
+
+.mrm-card>.header{
+    height: 32px;
+    padding: 16px;
 }
 
 .mrm-card>.media{
-    min-height: 64px;
+    min-height: $cardMediaMinHeightDefault;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@each $i in $cardMediaMinHeight{
+    .mrm-card>.media.min-#{$i}{
+        min-height: $i;
+    }
+}
+
+.mrm-card>.media>.info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    width: calc(100% - 16px);
+    max-height: 50%;
+    min-height: 32px;
+    background-color: $paletteBlack-54;
+    color: $paletteWhite-70;
+    display: inline-flex;
+}
+
+.mrm-card>.media>.info.no-background{
+    background-color: unset;
+}
+
+.mrm-card>.media>.info>p{
+    margin: 0;
+    display: flex;
+    line-height: 32px;
+    flex: 1;
+    flex-direction: row;
+}
+
+.mrm-card>.media>.info>.actions{
+    display: flex;
+    flex: none;
+    width: auto;
+}
+
+.mrm-card>.media>.info>.actions>i.material-icons{
+    line-height: 32px;
 }
 
 .mrm-card>.content{
     display: block;
-    margin: 32px 16px 32px 16px;
+    margin: $cardContentMargin;
+}
+
+
+/* collection */
+
+.mrm-card-collection>.mrm-card{
+    border-radius: 0px;
+    border-bottom: 1px solid $paletteBlack-12;
 }

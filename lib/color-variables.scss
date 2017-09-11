@@ -1,578 +1,579 @@
-$palette-red:
-"255,235,238"
-"255,205,210"
-"239,154,154"
-"229,115,115"
-"239,83,80"
-"244,67,54"
-"229,57,53"
-"211,47,47"
-"198,40,40"
-"183,28,28"
-"255,138,128"
-"255,82,82"
-"255,23,68"
-"213,0,0";
+$paletteRed:
+rgb(255,235,238),
+rgb(255,205,210),
+rgb(239,154,154),
+rgb(229,115,115),
+rgb(239,83,80),
+rgb(244,67,54),
+rgb(229,57,53),
+rgb(211,47,47),
+rgb(198,40,40),
+rgb(183,28,28),
+rgb(255,138,128),
+rgb(255,82,82),
+rgb(255,23,68),
+rgb(213,0,0);
 
-$palette-red-50: nth($palette-red, 1);
-$palette-red-100: nth($palette-red, 2);
-$palette-red-200: nth($palette-red, 3);
-$palette-red-300: nth($palette-red, 4);
-$palette-red-400: nth($palette-red, 5);
-$palette-red-500: nth($palette-red, 6);
-$palette-red-600: nth($palette-red, 7);
-$palette-red-700: nth($palette-red, 8);
-$palette-red-800: nth($palette-red, 9);
-$palette-red-900: nth($palette-red, 10);
-$palette-red-A100: nth($palette-red, 11);
-$palette-red-A200: nth($palette-red, 12);
-$palette-red-A400: nth($palette-red, 13);
-$palette-red-A700: nth($palette-red, 14);
+$paletteRed-50: nth($paletteRed, 1);
+$paletteRed-100: nth($paletteRed, 2);
+$paletteRed-200: nth($paletteRed, 3);
+$paletteRed-300: nth($paletteRed, 4);
+$paletteRed-400: nth($paletteRed, 5);
+$paletteRed-500: nth($paletteRed, 6);
+$paletteRed-600: nth($paletteRed, 7);
+$paletteRed-700: nth($paletteRed, 8);
+$paletteRed-800: nth($paletteRed, 9);
+$paletteRed-900: nth($paletteRed, 10);
+$paletteRed-A100: nth($paletteRed, 11);
+$paletteRed-A200: nth($paletteRed, 12);
+$paletteRed-A400: nth($paletteRed, 13);
+$paletteRed-A700: nth($paletteRed, 14);
 
-$palette-pink:
-"252,228,236"
-"248,187,208"
-"244,143,177"
-"240,98,146"
-"236,64,122"
-"233,30,99"
-"216,27,96"
-"194,24,91"
-"173,20,87"
-"136,14,79"
-"255,128,171"
-"255,64,129"
-"245,0,87"
-"197,17,98";
+$palettePink:
+rgb(252,228,236),
+rgb(248,187,208),
+rgb(244,143,177),
+rgb(240,98,146),
+rgb(236,64,122),
+rgb(233,30,99),
+rgb(216,27,96),
+rgb(194,24,91),
+rgb(173,20,87),
+rgb(136,14,79),
+rgb(255,128,171),
+rgb(255,64,129),
+rgb(245,0,87),
+rgb(197,17,98);
 
-$palette-pink-50: nth($palette-pink, 1);
-$palette-pink-100: nth($palette-pink, 2);
-$palette-pink-200: nth($palette-pink, 3);
-$palette-pink-300: nth($palette-pink, 4);
-$palette-pink-400: nth($palette-pink, 5);
-$palette-pink-500: nth($palette-pink, 6);
-$palette-pink-600: nth($palette-pink, 7);
-$palette-pink-700: nth($palette-pink, 8);
-$palette-pink-800: nth($palette-pink, 9);
-$palette-pink-900: nth($palette-pink, 10);
-$palette-pink-A100: nth($palette-pink, 11);
-$palette-pink-A200: nth($palette-pink, 12);
-$palette-pink-A400: nth($palette-pink, 13);
-$palette-pink-A700: nth($palette-pink, 14);
+$palettePink-50: nth($palettePink, 1);
+$palettePink-100: nth($palettePink, 2);
+$palettePink-200: nth($palettePink, 3);
+$palettePink-300: nth($palettePink, 4);
+$palettePink-400: nth($palettePink, 5);
+$palettePink-500: nth($palettePink, 6);
+$palettePink-600: nth($palettePink, 7);
+$palettePink-700: nth($palettePink, 8);
+$palettePink-800: nth($palettePink, 9);
+$palettePink-900: nth($palettePink, 10);
+$palettePink-A100: nth($palettePink, 11);
+$palettePink-A200: nth($palettePink, 12);
+$palettePink-A400: nth($palettePink, 13);
+$palettePink-A700: nth($palettePink, 14);
 
-$palette-purple:
-"243,229,245"
-"225,190,231"
-"206,147,216"
-"186,104,200"
-"171,71,188"
-"156,39,176"
-"142,36,170"
-"123,31,162"
-"106,27,154"
-"74,20,140"
-"234,128,252"
-"224,64,251"
-"213,0,249"
-"170,0,255";
+$palettePurple:
+rgb(243,229,245),
+rgb(225,190,231),
+rgb(206,147,216),
+rgb(186,104,200),
+rgb(171,71,188),
+rgb(156,39,176),
+rgb(142,36,170),
+rgb(123,31,162),
+rgb(106,27,154),
+rgb(74,20,140),
+rgb(234,128,252),
+rgb(224,64,251),
+rgb(213,0,249),
+rgb(170,0,255);
 
-$palette-purple-50: nth($palette-purple, 1);
-$palette-purple-100: nth($palette-purple, 2);
-$palette-purple-200: nth($palette-purple, 3);
-$palette-purple-300: nth($palette-purple, 4);
-$palette-purple-400: nth($palette-purple, 5);
-$palette-purple-500: nth($palette-purple, 6);
-$palette-purple-600: nth($palette-purple, 7);
-$palette-purple-700: nth($palette-purple, 8);
-$palette-purple-800: nth($palette-purple, 9);
-$palette-purple-900: nth($palette-purple, 10);
-$palette-purple-A100: nth($palette-purple, 11);
-$palette-purple-A200: nth($palette-purple, 12);
-$palette-purple-A400: nth($palette-purple, 13);
-$palette-purple-A700: nth($palette-purple, 14);
+$palettePurple-50: nth($palettePurple, 1);
+$palettePurple-100: nth($palettePurple, 2);
+$palettePurple-200: nth($palettePurple, 3);
+$palettePurple-300: nth($palettePurple, 4);
+$palettePurple-400: nth($palettePurple, 5);
+$palettePurple-500: nth($palettePurple, 6);
+$palettePurple-600: nth($palettePurple, 7);
+$palettePurple-700: nth($palettePurple, 8);
+$palettePurple-800: nth($palettePurple, 9);
+$palettePurple-900: nth($palettePurple, 10);
+$palettePurple-A100: nth($palettePurple, 11);
+$palettePurple-A200: nth($palettePurple, 12);
+$palettePurple-A400: nth($palettePurple, 13);
+$palettePurple-A700: nth($palettePurple, 14);
 
-$palette-deep-purple:
-"237,231,246"
-"209,196,233"
-"179,157,219"
-"149,117,205"
-"126,87,194"
-"103,58,183"
-"94,53,177"
-"81,45,168"
-"69,39,160"
-"49,27,146"
-"179,136,255"
-"124,77,255"
-"101,31,255"
-"98,0,234";
+$paletteDeepPurple:
+rgb(237,231,246),
+rgb(209,196,233),
+rgb(179,157,219),
+rgb(149,117,205),
+rgb(126,87,194),
+rgb(103,58,183),
+rgb(94,53,177),
+rgb(81,45,168),
+rgb(69,39,160),
+rgb(49,27,146),
+rgb(179,136,255),
+rgb(124,77,255),
+rgb(101,31,255),
+rgb(98,0,234);
 
-$palette-deep-purple-50: nth($palette-deep-purple, 1);
-$palette-deep-purple-100: nth($palette-deep-purple, 2);
-$palette-deep-purple-200: nth($palette-deep-purple, 3);
-$palette-deep-purple-300: nth($palette-deep-purple, 4);
-$palette-deep-purple-400: nth($palette-deep-purple, 5);
-$palette-deep-purple-500: nth($palette-deep-purple, 6);
-$palette-deep-purple-600: nth($palette-deep-purple, 7);
-$palette-deep-purple-700: nth($palette-deep-purple, 8);
-$palette-deep-purple-800: nth($palette-deep-purple, 9);
-$palette-deep-purple-900: nth($palette-deep-purple, 10);
-$palette-deep-purple-A100: nth($palette-deep-purple, 11);
-$palette-deep-purple-A200: nth($palette-deep-purple, 12);
-$palette-deep-purple-A400: nth($palette-deep-purple, 13);
-$palette-deep-purple-A700: nth($palette-deep-purple, 14);
+$paletteDeepPurple-50: nth($paletteDeepPurple, 1);
+$paletteDeepPurple-100: nth($paletteDeepPurple, 2);
+$paletteDeepPurple-200: nth($paletteDeepPurple, 3);
+$paletteDeepPurple-300: nth($paletteDeepPurple, 4);
+$paletteDeepPurple-400: nth($paletteDeepPurple, 5);
+$paletteDeepPurple-500: nth($paletteDeepPurple, 6);
+$paletteDeepPurple-600: nth($paletteDeepPurple, 7);
+$paletteDeepPurple-700: nth($paletteDeepPurple, 8);
+$paletteDeepPurple-800: nth($paletteDeepPurple, 9);
+$paletteDeepPurple-900: nth($paletteDeepPurple, 10);
+$paletteDeepPurple-A100: nth($paletteDeepPurple, 11);
+$paletteDeepPurple-A200: nth($paletteDeepPurple, 12);
+$paletteDeepPurple-A400: nth($paletteDeepPurple, 13);
+$paletteDeepPurple-A700: nth($paletteDeepPurple, 14);
 
-$palette-indigo:
-"232,234,246"
-"197,202,233"
-"159,168,218"
-"121,134,203"
-"92,107,192"
-"63,81,181"
-"57,73,171"
-"48,63,159"
-"40,53,147"
-"26,35,126"
-"140,158,255"
-"83,109,254"
-"61,90,254"
-"48,79,254";
+$paletteIndigo:
+rgb(232,234,246),
+rgb(197,202,233),
+rgb(159,168,218),
+rgb(121,134,203),
+rgb(92,107,192),
+rgb(63,81,181),
+rgb(57,73,171),
+rgb(48,63,159),
+rgb(40,53,147),
+rgb(26,35,126),
+rgb(140,158,255),
+rgb(83,109,254),
+rgb(61,90,254),
+rgb(48,79,254);
 
-$palette-indigo-50: nth($palette-indigo, 1);
-$palette-indigo-100: nth($palette-indigo, 2);
-$palette-indigo-200: nth($palette-indigo, 3);
-$palette-indigo-300: nth($palette-indigo, 4);
-$palette-indigo-400: nth($palette-indigo, 5);
-$palette-indigo-500: nth($palette-indigo, 6);
-$palette-indigo-600: nth($palette-indigo, 7);
-$palette-indigo-700: nth($palette-indigo, 8);
-$palette-indigo-800: nth($palette-indigo, 9);
-$palette-indigo-900: nth($palette-indigo, 10);
-$palette-indigo-A100: nth($palette-indigo, 11);
-$palette-indigo-A200: nth($palette-indigo, 12);
-$palette-indigo-A400: nth($palette-indigo, 13);
-$palette-indigo-A700: nth($palette-indigo, 14);
+$paletteIndigo-50: nth($paletteIndigo, 1);
+$paletteIndigo-100: nth($paletteIndigo, 2);
+$paletteIndigo-200: nth($paletteIndigo, 3);
+$paletteIndigo-300: nth($paletteIndigo, 4);
+$paletteIndigo-400: nth($paletteIndigo, 5);
+$paletteIndigo-500: nth($paletteIndigo, 6);
+$paletteIndigo-600: nth($paletteIndigo, 7);
+$paletteIndigo-700: nth($paletteIndigo, 8);
+$paletteIndigo-800: nth($paletteIndigo, 9);
+$paletteIndigo-900: nth($paletteIndigo, 10);
+$paletteIndigo-A100: nth($paletteIndigo, 11);
+$paletteIndigo-A200: nth($paletteIndigo, 12);
+$paletteIndigo-A400: nth($paletteIndigo, 13);
+$paletteIndigo-A700: nth($paletteIndigo, 14);
 
-$palette-blue:
-"227,242,253"
-"187,222,251"
-"144,202,249"
-"100,181,246"
-"66,165,245"
-"33,150,243"
-"30,136,229"
-"25,118,210"
-"21,101,192"
-"13,71,161"
-"130,177,255"
-"68,138,255"
-"41,121,255"
-"41,98,255";
+$paletteBlue:
+rgb(227,242,253),
+rgb(187,222,251),
+rgb(144,202,249),
+rgb(100,181,246),
+rgb(66,165,245),
+rgb(33,150,243),
+rgb(30,136,229),
+rgb(25,118,210),
+rgb(21,101,192),
+rgb(13,71,161),
+rgb(130,177,255),
+rgb(68,138,255),
+rgb(41,121,255),
+rgb(41,98,255);
 
-$palette-blue-50: nth($palette-blue, 1);
-$palette-blue-100: nth($palette-blue, 2);
-$palette-blue-200: nth($palette-blue, 3);
-$palette-blue-300: nth($palette-blue, 4);
-$palette-blue-400: nth($palette-blue, 5);
-$palette-blue-500: nth($palette-blue, 6);
-$palette-blue-600: nth($palette-blue, 7);
-$palette-blue-700: nth($palette-blue, 8);
-$palette-blue-800: nth($palette-blue, 9);
-$palette-blue-900: nth($palette-blue, 10);
-$palette-blue-A100: nth($palette-blue, 11);
-$palette-blue-A200: nth($palette-blue, 12);
-$palette-blue-A400: nth($palette-blue, 13);
-$palette-blue-A700: nth($palette-blue, 14);
+$paletteBlue-50: nth($paletteBlue, 1);
+$paletteBlue-100: nth($paletteBlue, 2);
+$paletteBlue-200: nth($paletteBlue, 3);
+$paletteBlue-300: nth($paletteBlue, 4);
+$paletteBlue-400: nth($paletteBlue, 5);
+$paletteBlue-500: nth($paletteBlue, 6);
+$paletteBlue-600: nth($paletteBlue, 7);
+$paletteBlue-700: nth($paletteBlue, 8);
+$paletteBlue-800: nth($paletteBlue, 9);
+$paletteBlue-900: nth($paletteBlue, 10);
+$paletteBlue-A100: nth($paletteBlue, 11);
+$paletteBlue-A200: nth($paletteBlue, 12);
+$paletteBlue-A400: nth($paletteBlue, 13);
+$paletteBlue-A700: nth($paletteBlue, 14);
 
-$palette-light-blue:
-"225,245,254"
-"179,229,252"
-"129,212,250"
-"79,195,247"
-"41,182,246"
-"3,169,244"
-"3,155,229"
-"2,136,209"
-"2,119,189"
-"1,87,155"
-"128,216,255"
-"64,196,255"
-"0,176,255"
-"0,145,234";
+$paletteLightBlue:
+rgb(225,245,254),
+rgb(179,229,252),
+rgb(129,212,250),
+rgb(79,195,247),
+rgb(41,182,246),
+rgb(3,169,244),
+rgb(3,155,229),
+rgb(2,136,209),
+rgb(2,119,189),
+rgb(1,87,155),
+rgb(128,216,255),
+rgb(64,196,255),
+rgb(0,176,255),
+rgb(0,145,234);
 
-$palette-light-blue-50: nth($palette-light-blue, 1);
-$palette-light-blue-100: nth($palette-light-blue, 2);
-$palette-light-blue-200: nth($palette-light-blue, 3);
-$palette-light-blue-300: nth($palette-light-blue, 4);
-$palette-light-blue-400: nth($palette-light-blue, 5);
-$palette-light-blue-500: nth($palette-light-blue, 6);
-$palette-light-blue-600: nth($palette-light-blue, 7);
-$palette-light-blue-700: nth($palette-light-blue, 8);
-$palette-light-blue-800: nth($palette-light-blue, 9);
-$palette-light-blue-900: nth($palette-light-blue, 10);
-$palette-light-blue-A100: nth($palette-light-blue, 11);
-$palette-light-blue-A200: nth($palette-light-blue, 12);
-$palette-light-blue-A400: nth($palette-light-blue, 13);
-$palette-light-blue-A700: nth($palette-light-blue, 14);
+$paletteLightBlue-50: nth($paletteLightBlue, 1);
+$paletteLightBlue-100: nth($paletteLightBlue, 2);
+$paletteLightBlue-200: nth($paletteLightBlue, 3);
+$paletteLightBlue-300: nth($paletteLightBlue, 4);
+$paletteLightBlue-400: nth($paletteLightBlue, 5);
+$paletteLightBlue-500: nth($paletteLightBlue, 6);
+$paletteLightBlue-600: nth($paletteLightBlue, 7);
+$paletteLightBlue-700: nth($paletteLightBlue, 8);
+$paletteLightBlue-800: nth($paletteLightBlue, 9);
+$paletteLightBlue-900: nth($paletteLightBlue, 10);
+$paletteLightBlue-A100: nth($paletteLightBlue, 11);
+$paletteLightBlue-A200: nth($paletteLightBlue, 12);
+$paletteLightBlue-A400: nth($paletteLightBlue, 13);
+$paletteLightBlue-A700: nth($paletteLightBlue, 14);
 
-$palette-cyan:
-"224,247,250"
-"178,235,242"
-"128,222,234"
-"77,208,225"
-"38,198,218"
-"0,188,212"
-"0,172,193"
-"0,151,167"
-"0,131,143"
-"0,96,100"
-"132,255,255"
-"24,255,255"
-"0,229,255"
-"0,184,212";
+$paletteCyan:
+rgb(224,247,250),
+rgb(178,235,242),
+rgb(128,222,234),
+rgb(77,208,225),
+rgb(38,198,218),
+rgb(0,188,212),
+rgb(0,172,193),
+rgb(0,151,167),
+rgb(0,131,143),
+rgb(0,96,100),
+rgb(132,255,255),
+rgb(24,255,255),
+rgb(0,229,255),
+rgb(0,184,212);
 
-$palette-cyan-50: nth($palette-cyan, 1);
-$palette-cyan-100: nth($palette-cyan, 2);
-$palette-cyan-200: nth($palette-cyan, 3);
-$palette-cyan-300: nth($palette-cyan, 4);
-$palette-cyan-400: nth($palette-cyan, 5);
-$palette-cyan-500: nth($palette-cyan, 6);
-$palette-cyan-600: nth($palette-cyan, 7);
-$palette-cyan-700: nth($palette-cyan, 8);
-$palette-cyan-800: nth($palette-cyan, 9);
-$palette-cyan-900: nth($palette-cyan, 10);
-$palette-cyan-A100: nth($palette-cyan, 11);
-$palette-cyan-A200: nth($palette-cyan, 12);
-$palette-cyan-A400: nth($palette-cyan, 13);
-$palette-cyan-A700: nth($palette-cyan, 14);
+$paletteCyan-50: nth($paletteCyan, 1);
+$paletteCyan-100: nth($paletteCyan, 2);
+$paletteCyan-200: nth($paletteCyan, 3);
+$paletteCyan-300: nth($paletteCyan, 4);
+$paletteCyan-400: nth($paletteCyan, 5);
+$paletteCyan-500: nth($paletteCyan, 6);
+$paletteCyan-600: nth($paletteCyan, 7);
+$paletteCyan-700: nth($paletteCyan, 8);
+$paletteCyan-800: nth($paletteCyan, 9);
+$paletteCyan-900: nth($paletteCyan, 10);
+$paletteCyan-A100: nth($paletteCyan, 11);
+$paletteCyan-A200: nth($paletteCyan, 12);
+$paletteCyan-A400: nth($paletteCyan, 13);
+$paletteCyan-A700: nth($paletteCyan, 14);
 
-$palette-teal:
-"224,242,241"
-"178,223,219"
-"128,203,196"
-"77,182,172"
-"38,166,154"
-"0,150,136"
-"0,137,123"
-"0,121,107"
-"0,105,92"
-"0,77,64"
-"167,255,235"
-"100,255,218"
-"29,233,182"
-"0,191,165";
+$paletteTeal:
+rgb(224,242,241),
+rgb(178,223,219),
+rgb(128,203,196),
+rgb(77,182,172),
+rgb(38,166,154),
+rgb(0,150,136),
+rgb(0,137,123),
+rgb(0,121,107),
+rgb(0,105,92),
+rgb(0,77,64),
+rgb(167,255,235),
+rgb(100,255,218),
+rgb(29,233,182),
+rgb(0,191,165);
 
-$palette-teal-50: nth($palette-teal, 1);
-$palette-teal-100: nth($palette-teal, 2);
-$palette-teal-200: nth($palette-teal, 3);
-$palette-teal-300: nth($palette-teal, 4);
-$palette-teal-400: nth($palette-teal, 5);
-$palette-teal-500: nth($palette-teal, 6);
-$palette-teal-600: nth($palette-teal, 7);
-$palette-teal-700: nth($palette-teal, 8);
-$palette-teal-800: nth($palette-teal, 9);
-$palette-teal-900: nth($palette-teal, 10);
-$palette-teal-A100: nth($palette-teal, 11);
-$palette-teal-A200: nth($palette-teal, 12);
-$palette-teal-A400: nth($palette-teal, 13);
-$palette-teal-A700: nth($palette-teal, 14);
+$paletteTeal-50: nth($paletteTeal, 1);
+$paletteTeal-100: nth($paletteTeal, 2);
+$paletteTeal-200: nth($paletteTeal, 3);
+$paletteTeal-300: nth($paletteTeal, 4);
+$paletteTeal-400: nth($paletteTeal, 5);
+$paletteTeal-500: nth($paletteTeal, 6);
+$paletteTeal-600: nth($paletteTeal, 7);
+$paletteTeal-700: nth($paletteTeal, 8);
+$paletteTeal-800: nth($paletteTeal, 9);
+$paletteTeal-900: nth($paletteTeal, 10);
+$paletteTeal-A100: nth($paletteTeal, 11);
+$paletteTeal-A200: nth($paletteTeal, 12);
+$paletteTeal-A400: nth($paletteTeal, 13);
+$paletteTeal-A700: nth($paletteTeal, 14);
 
-$palette-green:
-"232,245,233"
-"200,230,201"
-"165,214,167"
-"129,199,132"
-"102,187,106"
-"76,175,80"
-"67,160,71"
-"56,142,60"
-"46,125,50"
-"27,94,32"
-"185,246,202"
-"105,240,174"
-"0,230,118"
-"0,200,83";
+$paletteGreen:
+rgb(232,245,233),
+rgb(200,230,201),
+rgb(165,214,167),
+rgb(129,199,132),
+rgb(102,187,106),
+rgb(76,175,80),
+rgb(67,160,71),
+rgb(56,142,60),
+rgb(46,125,50),
+rgb(27,94,32),
+rgb(185,246,202),
+rgb(105,240,174),
+rgb(0,230,118),
+rgb(0,200,83);
 
-$palette-green-50: nth($palette-green, 1);
-$palette-green-100: nth($palette-green, 2);
-$palette-green-200: nth($palette-green, 3);
-$palette-green-300: nth($palette-green, 4);
-$palette-green-400: nth($palette-green, 5);
-$palette-green-500: nth($palette-green, 6);
-$palette-green-600: nth($palette-green, 7);
-$palette-green-700: nth($palette-green, 8);
-$palette-green-800: nth($palette-green, 9);
-$palette-green-900: nth($palette-green, 10);
-$palette-green-A100: nth($palette-green, 11);
-$palette-green-A200: nth($palette-green, 12);
-$palette-green-A400: nth($palette-green, 13);
-$palette-green-A700: nth($palette-green, 14);
+$paletteGreen-50: nth($paletteGreen, 1);
+$paletteGreen-100: nth($paletteGreen, 2);
+$paletteGreen-200: nth($paletteGreen, 3);
+$paletteGreen-300: nth($paletteGreen, 4);
+$paletteGreen-400: nth($paletteGreen, 5);
+$paletteGreen-500: nth($paletteGreen, 6);
+$paletteGreen-600: nth($paletteGreen, 7);
+$paletteGreen-700: nth($paletteGreen, 8);
+$paletteGreen-800: nth($paletteGreen, 9);
+$paletteGreen-900: nth($paletteGreen, 10);
+$paletteGreen-A100: nth($paletteGreen, 11);
+$paletteGreen-A200: nth($paletteGreen, 12);
+$paletteGreen-A400: nth($paletteGreen, 13);
+$paletteGreen-A700: nth($paletteGreen, 14);
 
-$palette-light-green:
-"241,248,233"
-"220,237,200"
-"197,225,165"
-"174,213,129"
-"156,204,101"
-"139,195,74"
-"124,179,66"
-"104,159,56"
-"85,139,47"
-"51,105,30"
-"204,255,144"
-"178,255,89"
-"118,255,3"
-"100,221,23";
+$paletteLightGreen:
+rgb(241,248,233),
+rgb(220,237,200),
+rgb(197,225,165),
+rgb(174,213,129),
+rgb(156,204,101),
+rgb(139,195,74),
+rgb(124,179,66),
+rgb(104,159,56),
+rgb(85,139,47),
+rgb(51,105,30),
+rgb(204,255,144),
+rgb(178,255,89),
+rgb(118,255,3),
+rgb(100,221,23);
 
-$palette-light-green-50: nth($palette-light-green, 1);
-$palette-light-green-100: nth($palette-light-green, 2);
-$palette-light-green-200: nth($palette-light-green, 3);
-$palette-light-green-300: nth($palette-light-green, 4);
-$palette-light-green-400: nth($palette-light-green, 5);
-$palette-light-green-500: nth($palette-light-green, 6);
-$palette-light-green-600: nth($palette-light-green, 7);
-$palette-light-green-700: nth($palette-light-green, 8);
-$palette-light-green-800: nth($palette-light-green, 9);
-$palette-light-green-900: nth($palette-light-green, 10);
-$palette-light-green-A100: nth($palette-light-green, 11);
-$palette-light-green-A200: nth($palette-light-green, 12);
-$palette-light-green-A400: nth($palette-light-green, 13);
-$palette-light-green-A700: nth($palette-light-green, 14);
+$paletteLightGreen-50: nth($paletteLightGreen, 1);
+$paletteLightGreen-100: nth($paletteLightGreen, 2);
+$paletteLightGreen-200: nth($paletteLightGreen, 3);
+$paletteLightGreen-300: nth($paletteLightGreen, 4);
+$paletteLightGreen-400: nth($paletteLightGreen, 5);
+$paletteLightGreen-500: nth($paletteLightGreen, 6);
+$paletteLightGreen-600: nth($paletteLightGreen, 7);
+$paletteLightGreen-700: nth($paletteLightGreen, 8);
+$paletteLightGreen-800: nth($paletteLightGreen, 9);
+$paletteLightGreen-900: nth($paletteLightGreen, 10);
+$paletteLightGreen-A100: nth($paletteLightGreen, 11);
+$paletteLightGreen-A200: nth($paletteLightGreen, 12);
+$paletteLightGreen-A400: nth($paletteLightGreen, 13);
+$paletteLightGreen-A700: nth($paletteLightGreen, 14);
 
-$palette-lime:
-"249,251,231"
-"240,244,195"
-"230,238,156"
-"220,231,117"
-"212,225,87"
-"205,220,57"
-"192,202,51"
-"175,180,43"
-"158,157,36"
-"130,119,23"
-"244,255,129"
-"238,255,65"
-"198,255,0"
-"174,234,0";
+$paletteLime:
+rgb(249,251,231),
+rgb(240,244,195),
+rgb(230,238,156),
+rgb(220,231,117),
+rgb(212,225,87),
+rgb(205,220,57),
+rgb(192,202,51),
+rgb(175,180,43),
+rgb(158,157,36),
+rgb(130,119,23),
+rgb(244,255,129),
+rgb(238,255,65),
+rgb(198,255,0),
+rgb(174,234,0);
 
-$palette-lime-50: nth($palette-lime, 1);
-$palette-lime-100: nth($palette-lime, 2);
-$palette-lime-200: nth($palette-lime, 3);
-$palette-lime-300: nth($palette-lime, 4);
-$palette-lime-400: nth($palette-lime, 5);
-$palette-lime-500: nth($palette-lime, 6);
-$palette-lime-600: nth($palette-lime, 7);
-$palette-lime-700: nth($palette-lime, 8);
-$palette-lime-800: nth($palette-lime, 9);
-$palette-lime-900: nth($palette-lime, 10);
-$palette-lime-A100: nth($palette-lime, 11);
-$palette-lime-A200: nth($palette-lime, 12);
-$palette-lime-A400: nth($palette-lime, 13);
-$palette-lime-A700: nth($palette-lime, 14);
+$paletteLime-50: nth($paletteLime, 1);
+$paletteLime-100: nth($paletteLime, 2);
+$paletteLime-200: nth($paletteLime, 3);
+$paletteLime-300: nth($paletteLime, 4);
+$paletteLime-400: nth($paletteLime, 5);
+$paletteLime-500: nth($paletteLime, 6);
+$paletteLime-600: nth($paletteLime, 7);
+$paletteLime-700: nth($paletteLime, 8);
+$paletteLime-800: nth($paletteLime, 9);
+$paletteLime-900: nth($paletteLime, 10);
+$paletteLime-A100: nth($paletteLime, 11);
+$paletteLime-A200: nth($paletteLime, 12);
+$paletteLime-A400: nth($paletteLime, 13);
+$paletteLime-A700: nth($paletteLime, 14);
 
-$palette-yellow:
-"255,253,231"
-"255,249,196"
-"255,245,157"
-"255,241,118"
-"255,238,88"
-"255,235,59"
-"253,216,53"
-"251,192,45"
-"249,168,37"
-"245,127,23"
-"255,255,141"
-"255,255,0"
-"255,234,0"
-"255,214,0";
+$paletteYellow:
+rgb(255,253,231),
+rgb(255,249,196),
+rgb(255,245,157),
+rgb(255,241,118),
+rgb(255,238,88),
+rgb(255,235,59),
+rgb(253,216,53),
+rgb(251,192,45),
+rgb(249,168,37),
+rgb(245,127,23),
+rgb(255,255,141),
+rgb(255,255,0),
+rgb(255,234,0),
+rgb(255,214,0);
 
-$palette-yellow-50: nth($palette-yellow, 1);
-$palette-yellow-100: nth($palette-yellow, 2);
-$palette-yellow-200: nth($palette-yellow, 3);
-$palette-yellow-300: nth($palette-yellow, 4);
-$palette-yellow-400: nth($palette-yellow, 5);
-$palette-yellow-500: nth($palette-yellow, 6);
-$palette-yellow-600: nth($palette-yellow, 7);
-$palette-yellow-700: nth($palette-yellow, 8);
-$palette-yellow-800: nth($palette-yellow, 9);
-$palette-yellow-900: nth($palette-yellow, 10);
-$palette-yellow-A100: nth($palette-yellow, 11);
-$palette-yellow-A200: nth($palette-yellow, 12);
-$palette-yellow-A400: nth($palette-yellow, 13);
-$palette-yellow-A700: nth($palette-yellow, 14);
+$paletteYellow-50: nth($paletteYellow, 1);
+$paletteYellow-100: nth($paletteYellow, 2);
+$paletteYellow-200: nth($paletteYellow, 3);
+$paletteYellow-300: nth($paletteYellow, 4);
+$paletteYellow-400: nth($paletteYellow, 5);
+$paletteYellow-500: nth($paletteYellow, 6);
+$paletteYellow-600: nth($paletteYellow, 7);
+$paletteYellow-700: nth($paletteYellow, 8);
+$paletteYellow-800: nth($paletteYellow, 9);
+$paletteYellow-900: nth($paletteYellow, 10);
+$paletteYellow-A100: nth($paletteYellow, 11);
+$paletteYellow-A200: nth($paletteYellow, 12);
+$paletteYellow-A400: nth($paletteYellow, 13);
+$paletteYellow-A700: nth($paletteYellow, 14);
 
-$palette-amber:
-"255,248,225"
-"255,236,179"
-"255,224,130"
-"255,213,79"
-"255,202,40"
-"255,193,7"
-"255,179,0"
-"255,160,0"
-"255,143,0"
-"255,111,0"
-"255,229,127"
-"255,215,64"
-"255,196,0"
-"255,171,0";
+$paletteAmber:
+rgb(255,248,225),
+rgb(255,236,179),
+rgb(255,224,130),
+rgb(255,213,79),
+rgb(255,202,40),
+rgb(255,193,7),
+rgb(255,179,0),
+rgb(255,160,0),
+rgb(255,143,0),
+rgb(255,111,0),
+rgb(255,229,127),
+rgb(255,215,64),
+rgb(255,196,0),
+rgb(255,171,0);
 
-$palette-amber-50: nth($palette-amber, 1);
-$palette-amber-100: nth($palette-amber, 2);
-$palette-amber-200: nth($palette-amber, 3);
-$palette-amber-300: nth($palette-amber, 4);
-$palette-amber-400: nth($palette-amber, 5);
-$palette-amber-500: nth($palette-amber, 6);
-$palette-amber-600: nth($palette-amber, 7);
-$palette-amber-700: nth($palette-amber, 8);
-$palette-amber-800: nth($palette-amber, 9);
-$palette-amber-900: nth($palette-amber, 10);
-$palette-amber-A100: nth($palette-amber, 11);
-$palette-amber-A200: nth($palette-amber, 12);
-$palette-amber-A400: nth($palette-amber, 13);
-$palette-amber-A700: nth($palette-amber, 14);
+$paletteAmber-50: nth($paletteAmber, 1);
+$paletteAmber-100: nth($paletteAmber, 2);
+$paletteAmber-200: nth($paletteAmber, 3);
+$paletteAmber-300: nth($paletteAmber, 4);
+$paletteAmber-400: nth($paletteAmber, 5);
+$paletteAmber-500: nth($paletteAmber, 6);
+$paletteAmber-600: nth($paletteAmber, 7);
+$paletteAmber-700: nth($paletteAmber, 8);
+$paletteAmber-800: nth($paletteAmber, 9);
+$paletteAmber-900: nth($paletteAmber, 10);
+$paletteAmber-A100: nth($paletteAmber, 11);
+$paletteAmber-A200: nth($paletteAmber, 12);
+$paletteAmber-A400: nth($paletteAmber, 13);
+$paletteAmber-A700: nth($paletteAmber, 14);
 
-$palette-orange:
-"255,243,224"
-"255,224,178"
-"255,204,128"
-"255,183,77"
-"255,167,38"
-"255,152,0"
-"251,140,0"
-"245,124,0"
-"239,108,0"
-"230,81,0"
-"255,209,128"
-"255,171,64"
-"255,145,0"
-"255,109,0";
+$paletteOrange:
+rgb(255,243,224),
+rgb(255,224,178),
+rgb(255,204,128),
+rgb(255,183,77),
+rgb(255,167,38),
+rgb(255,152,0),
+rgb(251,140,0),
+rgb(245,124,0),
+rgb(239,108,0),
+rgb(230,81,0),
+rgb(255,209,128),
+rgb(255,171,64),
+rgb(255,145,0),
+rgb(255,109,0);
 
-$palette-orange-50: nth($palette-orange, 1);
-$palette-orange-100: nth($palette-orange, 2);
-$palette-orange-200: nth($palette-orange, 3);
-$palette-orange-300: nth($palette-orange, 4);
-$palette-orange-400: nth($palette-orange, 5);
-$palette-orange-500: nth($palette-orange, 6);
-$palette-orange-600: nth($palette-orange, 7);
-$palette-orange-700: nth($palette-orange, 8);
-$palette-orange-800: nth($palette-orange, 9);
-$palette-orange-900: nth($palette-orange, 10);
-$palette-orange-A100: nth($palette-orange, 11);
-$palette-orange-A200: nth($palette-orange, 12);
-$palette-orange-A400: nth($palette-orange, 13);
-$palette-orange-A700: nth($palette-orange, 14);
+$paletteOrange-50: nth($paletteOrange, 1);
+$paletteOrange-100: nth($paletteOrange, 2);
+$paletteOrange-200: nth($paletteOrange, 3);
+$paletteOrange-300: nth($paletteOrange, 4);
+$paletteOrange-400: nth($paletteOrange, 5);
+$paletteOrange-500: nth($paletteOrange, 6);
+$paletteOrange-600: nth($paletteOrange, 7);
+$paletteOrange-700: nth($paletteOrange, 8);
+$paletteOrange-800: nth($paletteOrange, 9);
+$paletteOrange-900: nth($paletteOrange, 10);
+$paletteOrange-A100: nth($paletteOrange, 11);
+$paletteOrange-A200: nth($paletteOrange, 12);
+$paletteOrange-A400: nth($paletteOrange, 13);
+$paletteOrange-A700: nth($paletteOrange, 14);
 
-$palette-deep-orange:
-"251,233,231"
-"255,204,188"
-"255,171,145"
-"255,138,101"
-"255,112,67"
-"255,87,34"
-"244,81,30"
-"230,74,25"
-"216,67,21"
-"191,54,12"
-"255,158,128"
-"255,110,64"
-"255,61,0"
-"221,44,0";
+$paletteDeepOrange:
+rgb(251,233,231),
+rgb(255,204,188),
+rgb(255,171,145),
+rgb(255,138,101),
+rgb(255,112,67),
+rgb(255,87,34),
+rgb(244,81,30),
+rgb(230,74,25),
+rgb(216,67,21),
+rgb(191,54,12),
+rgb(255,158,128),
+rgb(255,110,64),
+rgb(255,61,0),
+rgb(221,44,0);
 
-$palette-deep-orange-50: nth($palette-deep-orange, 1);
-$palette-deep-orange-100: nth($palette-deep-orange, 2);
-$palette-deep-orange-200: nth($palette-deep-orange, 3);
-$palette-deep-orange-300: nth($palette-deep-orange, 4);
-$palette-deep-orange-400: nth($palette-deep-orange, 5);
-$palette-deep-orange-500: nth($palette-deep-orange, 6);
-$palette-deep-orange-600: nth($palette-deep-orange, 7);
-$palette-deep-orange-700: nth($palette-deep-orange, 8);
-$palette-deep-orange-800: nth($palette-deep-orange, 9);
-$palette-deep-orange-900: nth($palette-deep-orange, 10);
-$palette-deep-orange-A100: nth($palette-deep-orange, 11);
-$palette-deep-orange-A200: nth($palette-deep-orange, 12);
-$palette-deep-orange-A400: nth($palette-deep-orange, 13);
-$palette-deep-orange-A700: nth($palette-deep-orange, 14);
+$paletteDeepOrange-50: nth($paletteDeepOrange, 1);
+$paletteDeepOrange-100: nth($paletteDeepOrange, 2);
+$paletteDeepOrange-200: nth($paletteDeepOrange, 3);
+$paletteDeepOrange-300: nth($paletteDeepOrange, 4);
+$paletteDeepOrange-400: nth($paletteDeepOrange, 5);
+$paletteDeepOrange-500: nth($paletteDeepOrange, 6);
+$paletteDeepOrange-600: nth($paletteDeepOrange, 7);
+$paletteDeepOrange-700: nth($paletteDeepOrange, 8);
+$paletteDeepOrange-800: nth($paletteDeepOrange, 9);
+$paletteDeepOrange-900: nth($paletteDeepOrange, 10);
+$paletteDeepOrange-A100: nth($paletteDeepOrange, 11);
+$paletteDeepOrange-A200: nth($paletteDeepOrange, 12);
+$paletteDeepOrange-A400: nth($paletteDeepOrange, 13);
+$paletteDeepOrange-A700: nth($paletteDeepOrange, 14);
+
 
 
 // Color order: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900.
 
-$palette-brown:
-"239,235,233"
-"215,204,200"
-"188,170,164"
-"161,136,127"
-"141,110,99"
-"121,85,72"
-"109,76,65"
-"93,64,55"
-"78,52,46"
-"62,39,35";
+$paletteBrown:
+rgb(239,235,233),
+rgb(215,204,200),
+rgb(188,170,164),
+rgb(161,136,127),
+rgb(141,110,99),
+rgb(121,85,72),
+rgb(109,76,65),
+rgb(93,64,55),
+rgb(78,52,46),
+rgb(62,39,35);
 
-$palette-brown-50: nth($palette-brown, 1);
-$palette-brown-100: nth($palette-brown, 2);
-$palette-brown-200: nth($palette-brown, 3);
-$palette-brown-300: nth($palette-brown, 4);
-$palette-brown-400: nth($palette-brown, 5);
-$palette-brown-500: nth($palette-brown, 6);
-$palette-brown-600: nth($palette-brown, 7);
-$palette-brown-700: nth($palette-brown, 8);
-$palette-brown-800: nth($palette-brown, 9);
-$palette-brown-900: nth($palette-brown, 10);
+$paletteBrown-50: nth($paletteBrown, 1);
+$paletteBrown-100: nth($paletteBrown, 2);
+$paletteBrown-200: nth($paletteBrown, 3);
+$paletteBrown-300: nth($paletteBrown, 4);
+$paletteBrown-400: nth($paletteBrown, 5);
+$paletteBrown-500: nth($paletteBrown, 6);
+$paletteBrown-600: nth($paletteBrown, 7);
+$paletteBrown-700: nth($paletteBrown, 8);
+$paletteBrown-800: nth($paletteBrown, 9);
+$paletteBrown-900: nth($paletteBrown, 10);
 
-$palette-grey:
-"250,250,250"
-"245,245,245"
-"238,238,238"
-"224,224,224"
-"189,189,189"
-"158,158,158"
-"117,117,117"
-"97,97,97"
-"66,66,66"
-"33,33,33";
+$paletteGrey:
+rgb(250,250,250),
+rgb(245,245,245),
+rgb(238,238,238),
+rgb(224,224,224),
+rgb(189,189,189),
+rgb(158,158,158),
+rgb(117,117,117),
+rgb(97,97,97),
+rgb(66,66,66),
+rgb(33,33,33);
 
-$palette-grey-50: nth($palette-grey, 1);
-$palette-grey-100: nth($palette-grey, 2);
-$palette-grey-200: nth($palette-grey, 3);
-$palette-grey-300: nth($palette-grey, 4);
-$palette-grey-400: nth($palette-grey, 5);
-$palette-grey-500: nth($palette-grey, 6);
-$palette-grey-600: nth($palette-grey, 7);
-$palette-grey-700: nth($palette-grey, 8);
-$palette-grey-800: nth($palette-grey, 9);
-$palette-grey-900: nth($palette-grey, 10);
+$paletteGrey-50: nth($paletteGrey, 1);
+$paletteGrey-100: nth($paletteGrey, 2);
+$paletteGrey-200: nth($paletteGrey, 3);
+$paletteGrey-300: nth($paletteGrey, 4);
+$paletteGrey-400: nth($paletteGrey, 5);
+$paletteGrey-500: nth($paletteGrey, 6);
+$paletteGrey-600: nth($paletteGrey, 7);
+$paletteGrey-700: nth($paletteGrey, 8);
+$paletteGrey-800: nth($paletteGrey, 9);
+$paletteGrey-900: nth($paletteGrey, 10);
 
-$palette-blue-grey:
-"236,239,241"
-"207,216,220"
-"176,190,197"
-"144,164,174"
-"120,144,156"
-"96,125,139"
-"84,110,122"
-"69,90,100"
-"55,71,79"
-"38,50,56";
+$paletteBlueGrey:
+rgb(236,239,241),
+rgb(207,216,220),
+rgb(176,190,197),
+rgb(144,164,174),
+rgb(120,144,156),
+rgb(96,125,139),
+rgb(84,110,122),
+rgb(69,90,100),
+rgb(55,71,79),
+rgb(38,50,56);
 
-$palette-blue-grey-50: nth($palette-blue-grey, 1);
-$palette-blue-grey-100: nth($palette-blue-grey, 2);
-$palette-blue-grey-200: nth($palette-blue-grey, 3);
-$palette-blue-grey-300: nth($palette-blue-grey, 4);
-$palette-blue-grey-400: nth($palette-blue-grey, 5);
-$palette-blue-grey-500: nth($palette-blue-grey, 6);
-$palette-blue-grey-600: nth($palette-blue-grey, 7);
-$palette-blue-grey-700: nth($palette-blue-grey, 8);
-$palette-blue-grey-800: nth($palette-blue-grey, 9);
-$palette-blue-grey-900: nth($palette-blue-grey, 10);
+$paletteBlueGrey-50: nth($paletteBlueGrey, 1);
+$paletteBlueGrey-100: nth($paletteBlueGrey, 2);
+$paletteBlueGrey-200: nth($paletteBlueGrey, 3);
+$paletteBlueGrey-300: nth($paletteBlueGrey, 4);
+$paletteBlueGrey-400: nth($paletteBlueGrey, 5);
+$paletteBlueGrey-500: nth($paletteBlueGrey, 6);
+$paletteBlueGrey-600: nth($paletteBlueGrey, 7);
+$paletteBlueGrey-700: nth($paletteBlueGrey, 8);
+$paletteBlueGrey-800: nth($paletteBlueGrey, 9);
+$paletteBlueGrey-900: nth($paletteBlueGrey, 10);
 
-$color-black: "0,0,0";
-$color-black-87: rgba(0,0,0,.87);
-$color-black-54: rgba(0,0,0,.54);
-$color-black-38: rgba(0,0,0,.38);
-$color-black-12: rgba(0,0,0,.12);
+$paletteBlack: rgb(0,0,0);
+$paletteBlack-87: rgba(0,0,0,.87);
+$paletteBlack-54: rgba(0,0,0,.54);
+$paletteBlack-38: rgba(0,0,0,.38);
+$paletteBlack-12: rgba(0,0,0,.12);
 
-$color-white: "255,255,255";
-$color-white-70: rgba(255,255,255,.70);
-$color-white-50: rgba(255,255,255,.50);
-$color-white-12: rgba(255,255,255,.12);
+$paletteWhite: rgb(255,255,255);
+$paletteWhite-70: rgba(255,255,255,.70);
+$paletteWhite-50: rgba(255,255,255,.50);
+$paletteWhite-12: rgba(255,255,255,.12);

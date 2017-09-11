@@ -1,0 +1,1236 @@
+/* import fonts */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("fonts/Roboto-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url("fonts/Roboto-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url("fonts/Roboto-Thin.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('fonts/Roboto-Black.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url('fonts/Roboto-BlackItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('fonts/Roboto-BoldItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('fonts/Roboto-Italic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('fonts/Roboto-LightItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('fonts/Roboto-MediumItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url('fonts/Roboto-ThinItalic.ttf') format('ttf');
+}
+
+
+/* Font Variables */
+
+$robotoBlack: 'Roboto-Black',
+sans-serif;
+$robotoBlackItalic: 'Roboto-BlackItalic',
+sans-serif;
+$robotoBold: 'Roboto-Bold',
+sans-serif;
+$robotoBoldItalic: 'Roboto-BoldItalic',
+sans-serif;
+$robotoItalic: 'Roboto-Italic',
+sans-serif;
+$robotoLightItalic: 'Roboto-LightItalic',
+sans-serif;
+$robotoMediumItalic: 'Roboto-MediumItalic',
+sans-serif;
+$robotoRegular: 'Roboto-Regular',
+sans-serif;
+$robotoMedium:'Roboto-Medium',
+sans-serif;
+$robotoLight: 'Roboto-Light',
+sans-serif;
+$robotoThin: 'Roboto-Thin',
+sans-serif;
+
+/* styles */
+
+body {
+    font-family: $robotoRegular;
+    font-weight: normal;
+}
+
+
+/* icons */
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/* text colors */
+
+/* basic */
+
+.mrm-color--white{
+    color: $paletteWhite !important;
+}
+
+.mrm-color--white-70{
+    color: $paletteWhite-70 !important;
+}
+
+.mrm-color--white-50{
+    color: $paletteWhite-50 !important;
+}
+
+.mrm-color--white-12{
+    color: $paletteWhite-12 !important;
+}
+
+.mrm-color--black{
+    color: $paletteBlack !important;
+}
+
+.mrm-color--black-87{
+    color: $paletteBlack-87 !important;
+}
+
+.mrm-color--black-54{
+    color: $paletteBlack-54 !important;
+}
+
+.mrm-color--black-38{
+    color: $paletteBlack-38 !important;
+}
+
+.mrm-color--black-12{
+    color: $paletteBlack-12 !important;
+}
+
+/* color red */
+
+.mrm-color--red,
+.mrm-color--red-500 {
+    color: $paletteRed-500 !important;
+}
+
+.mrm-color--red-50 {
+    color: $paletteRed-50 !important;
+}
+
+.mrm-color--red-100 {
+    color: $paletteRed-100 !important;
+}
+
+.mrm-color--red-200 {
+    color: $paletteRed-200 !important;
+}
+
+.mrm-color--red-300 {
+    color: $paletteRed-300 !important;
+}
+
+.mrm-color--red-400 {
+    color: $paletteRed-400 !important;
+}
+
+.mrm-color--red-600 {
+    color: $paletteRed-600 !important;
+}
+
+.mrm-color--red-700 {
+    color: $paletteRed-700 !important;
+}
+
+.mrm-color--red-800 {
+    color: $paletteRed-800 !important;
+}
+
+.mrm-color--red-900 {
+    color: $paletteRed-900 !important;
+}
+
+.mrm-color--red-A100 {
+    color: $paletteRed-A100 !important;
+}
+
+.mrm-color--red-A200 {
+    color: $paletteRed-A200 !important;
+}
+
+.mrm-color--red-A400 {
+    color: $paletteRed-A400 !important;
+}
+
+.mrm-color--red-A700 {
+    color: $paletteRed-A700 !important;
+}
+
+/* color pink */
+
+.mrm-color--pink,
+.mrm-color--pink-500 {
+    color: $palettePink-500 !important;
+}
+
+.mrm-color--pink-50 {
+    color: $palettePink-50 !important;
+}
+
+.mrm-color--pink-100 {
+    color: $palettePink-100 !important;
+}
+
+.mrm-color--pink-200 {
+    color: $palettePink-200 !important;
+}
+
+.mrm-color--pink-300 {
+    color: $palettePink-300 !important;
+}
+
+.mrm-color--pink-400 {
+    color: $palettePink-400 !important;
+}
+
+.mrm-color--pink-600 {
+    color: $palettePink-600 !important;
+}
+
+.mrm-color--pink-700 {
+    color: $palettePink-700 !important;
+}
+
+.mrm-color--pink-800 {
+    color: $palettePink-800 !important;
+}
+
+.mrm-color--pink-900 {
+    color: $palettePink-900 !important;
+}
+
+.mrm-color--pink-A100 {
+    color: $palettePink-A100 !important;
+}
+
+.mrm-color--pink-A200 {
+    color: $palettePink-A200 !important;
+}
+
+.mrm-color--pink-A400 {
+    color: $palettePink-A400 !important;
+}
+
+.mrm-color--pink-A700 {
+    color: $palettePink-A700 !important;
+}
+
+/* color purple */
+
+.mrm-color--purple,
+.mrm-color--purple-500 {
+    color: $palettePurple-500 !important;
+}
+
+.mrm-color--purple-50 {
+    color: $palettePurple-50 !important;
+}
+
+.mrm-color--purple-100 {
+    color: $palettePurple-100 !important;
+}
+
+.mrm-color--purple-200 {
+    color: $palettePurple-200 !important;
+}
+
+.mrm-color--purple-300 {
+    color: $palettePurple-300 !important;
+}
+
+.mrm-color--purple-400 {
+    color: $palettePurple-400 !important;
+}
+
+.mrm-color--purple-600 {
+    color: $palettePurple-600 !important;
+}
+
+.mrm-color--purple-700 {
+    color: $palettePurple-700 !important;
+}
+
+.mrm-color--purple-800 {
+    color: $palettePurple-800 !important;
+}
+
+.mrm-color--purple-900 {
+    color: $palettePurple-900 !important;
+}
+
+.mrm-color--purple-A100 {
+    color: $palettePurple-A100 !important;
+}
+
+.mrm-color--purple-A200 {
+    color: $palettePurple-A200 !important;
+}
+
+.mrm-color--purple-A400 {
+    color: $palettePurple-A400 !important;
+}
+
+.mrm-color--purple-A700 {
+    color: $palettePurple-A700 !important;
+}
+
+/* color deep purple */
+
+.mrm-color--deep-purple,
+.mrm-color--deep-purple-500 {
+    color: $paletteDeepPurple-500 !important;
+}
+
+.mrm-color--deep-purple-50 {
+    color: $paletteDeepPurple-50 !important;
+}
+
+.mrm-color--deep-purple-100 {
+    color: $paletteDeepPurple-100 !important;
+}
+
+.mrm-color--deep-purple-200 {
+    color: $paletteDeepPurple-200 !important;
+}
+
+.mrm-color--deep-purple-300 {
+    color: $paletteDeepPurple-300 !important;
+}
+
+.mrm-color--deep-purple-400 {
+    color: $paletteDeepPurple-400 !important;
+}
+
+.mrm-color--deep-purple-600 {
+    color: $paletteDeepPurple-600 !important;
+}
+
+.mrm-color--deep-purple-700 {
+    color: $paletteDeepPurple-700 !important;
+}
+
+.mrm-color--deep-purple-800 {
+    color: $paletteDeepPurple-800 !important;
+}
+
+.mrm-color--deep-purple-900 {
+    color: $paletteDeepPurple-900 !important;
+}
+
+.mrm-color--deep-purple-A100 {
+    color: $paletteDeepPurple-A100 !important;
+}
+
+.mrm-color--deep-purple-A200 {
+    color: $paletteDeepPurple-A200 !important;
+}
+
+.mrm-color--deep-purple-A400 {
+    color: $paletteDeepPurple-A400 !important;
+}
+
+.mrm-color--deep-purple-A700 {
+    color: $paletteDeepPurple-A700 !important;
+}
+
+
+/* color indigo */
+
+.mrm-color--indigo,
+.mrm-color--indigo-500 {
+    color: $paletteIndigo-500 !important;
+}
+
+.mrm-color--indigo-50 {
+    color: $paletteIndigo-50 !important;
+}
+
+.mrm-color--indigo-100 {
+    color: $paletteIndigo-100 !important;
+}
+
+.mrm-color--indigo-200 {
+    color: $paletteIndigo-200 !important;
+}
+
+.mrm-color--indigo-300 {
+    color: $paletteIndigo-300 !important;
+}
+
+.mrm-color--indigo-400 {
+    color: $paletteIndigo-400 !important;
+}
+
+.mrm-color--indigo-600 {
+    color: $paletteIndigo-600 !important;
+}
+
+.mrm-color--indigo-700 {
+    color: $paletteIndigo-700 !important;
+}
+
+.mrm-color--indigo-800 {
+    color: $paletteIndigo-800 !important;
+}
+
+.mrm-color--indigo-900 {
+    color: $paletteIndigo-900 !important;
+}
+
+.mrm-color--indigo-A100 {
+    color: $paletteIndigo-A100 !important;
+}
+
+.mrm-color--indigo-A200 {
+    color: $paletteIndigo-A200 !important;
+}
+
+.mrm-color--indigo-A400 {
+    color: $paletteIndigo-A400 !important;
+}
+
+.mrm-color--indigo-A700 {
+    color: $paletteIndigo-A700 !important;
+}
+
+/* color blue */
+
+.mrm-color--blue,
+.mrm-color--blue-500 {
+    color: $paletteBlue-500 !important;
+}
+
+.mrm-color--blue-50 {
+    color: $paletteBlue-50 !important;
+}
+
+.mrm-color--blue-100 {
+    color: $paletteBlue-100 !important;
+}
+
+.mrm-color--blue-200 {
+    color: $paletteBlue-200 !important;
+}
+
+.mrm-color--blue-300 {
+    color: $paletteBlue-300 !important;
+}
+
+.mrm-color--blue-400 {
+    color: $paletteBlue-400 !important;
+}
+
+.mrm-color--blue-600 {
+    color: $paletteBlue-600 !important;
+}
+
+.mrm-color--blue-700 {
+    color: $paletteBlue-700 !important;
+}
+
+.mrm-color--blue-800 {
+    color: $paletteBlue-800 !important;
+}
+
+.mrm-color--blue-900 {
+    color: $paletteBlue-900 !important;
+}
+
+.mrm-color--blue-A100 {
+    color: $paletteBlue-A100 !important;
+}
+
+.mrm-color--blue-A200 {
+    color: $paletteBlue-A200 !important;
+}
+
+.mrm-color--blue-A400 {
+    color: $paletteBlue-A400 !important;
+}
+
+.mrm-color--blue-A700 {
+    color: $paletteBlue-A700 !important;
+}
+
+/* color light blue */
+
+.mrm-color--light-blue,
+.mrm-color--light-blue-500 {
+    color: $paletteLightBlue-500 !important;
+}
+
+.mrm-color--light-blue-50 {
+    color: $paletteLightBlue-50 !important;
+}
+
+.mrm-color--light-blue-100 {
+    color: $paletteLightBlue-100 !important;
+}
+
+.mrm-color--light-blue-200 {
+    color: $paletteLightBlue-200 !important;
+}
+
+.mrm-color--light-blue-300 {
+    color: $paletteLightBlue-300 !important;
+}
+
+.mrm-color--light-blue-400 {
+    color: $paletteLightBlue-400 !important;
+}
+
+.mrm-color--light-blue-600 {
+    color: $paletteLightBlue-600 !important;
+}
+
+.mrm-color--light-blue-700 {
+    color: $paletteLightBlue-700 !important;
+}
+
+.mrm-color--light-blue-800 {
+    color: $paletteLightBlue-800 !important;
+}
+
+.mrm-color--light-blue-900 {
+    color: $paletteLightBlue-900 !important;
+}
+
+.mrm-color--light-blue-A100 {
+    color: $paletteLightBlue-A100 !important;
+}
+
+.mrm-color--light-blue-A200 {
+    color: $paletteLightBlue-A200 !important;
+}
+
+.mrm-color--light-blue-A400 {
+    color: $paletteLightBlue-A400 !important;
+}
+
+.mrm-color--light-blue-A700 {
+    color: $paletteLightBlue-A700 !important;
+}
+
+/* color light cyan */
+
+.mrm-color--cyan,
+.mrm-color--cyan-500 {
+    color: $paletteCyan-500 !important;
+}
+
+.mrm-color--cyan-50 {
+    color: $paletteCyan-50 !important;
+}
+
+.mrm-color--cyan-100 {
+    color: $paletteCyan-100 !important;
+}
+
+.mrm-color--cyan-200 {
+    color: $paletteCyan-200 !important;
+}
+
+.mrm-color--cyan-300 {
+    color: $paletteCyan-300 !important;
+}
+
+.mrm-color--cyan-400 {
+    color: $paletteCyan-400 !important;
+}
+
+.mrm-color--cyan-600 {
+    color: $paletteCyan-600 !important;
+}
+
+.mrm-color--cyan-700 {
+    color: $paletteCyan-700 !important;
+}
+
+.mrm-color--cyan-800 {
+    color: $paletteCyan-800 !important;
+}
+
+.mrm-color--cyan-900 {
+    color: $paletteCyan-900 !important;
+}
+
+.mrm-color--cyan-A100 {
+    color: $paletteCyan-A100 !important;
+}
+
+.mrm-color--cyan-A200 {
+    color: $paletteCyan-A200 !important;
+}
+
+.mrm-color--cyan-A400 {
+    color: $paletteCyan-A400 !important;
+}
+
+.mrm-color--cyan-A700 {
+    color: $paletteCyan-A700 !important;
+}
+
+/* color light teal */
+
+.mrm-color--teal,
+.mrm-color--teal-500 {
+    color: $paletteTeal-500 !important;
+}
+
+.mrm-color--teal-50 {
+    color: $paletteTeal-50 !important;
+}
+
+.mrm-color--teal-100 {
+    color: $paletteTeal-100 !important;
+}
+
+.mrm-color--teal-200 {
+    color: $paletteTeal-200 !important;
+}
+
+.mrm-color--teal-300 {
+    color: $paletteTeal-300 !important;
+}
+
+.mrm-color--teal-400 {
+    color: $paletteTeal-400 !important;
+}
+
+.mrm-color--teal-600 {
+    color: $paletteTeal-600 !important;
+}
+
+.mrm-color--teal-700 {
+    color: $paletteTeal-700 !important;
+}
+
+.mrm-color--teal-800 {
+    color: $paletteTeal-800 !important;
+}
+
+.mrm-color--teal-900 {
+    color: $paletteTeal-900 !important;
+}
+
+.mrm-color--teal-A100 {
+    color: $paletteTeal-A100 !important;
+}
+
+.mrm-color--teal-A200 {
+    color: $paletteTeal-A200 !important;
+}
+
+.mrm-color--teal-A400 {
+    color: $paletteTeal-A400 !important;
+}
+
+.mrm-color--teal-A700 {
+    color: $paletteTeal-A700 !important;
+}
+
+/* color green */
+
+.mrm-color--green,
+.mrm-color--green-500 {
+    color: $paletteGreen-500 !important;
+}
+
+.mrm-color--green-50 {
+    color: $paletteGreen-50 !important;
+}
+
+.mrm-color--green-100 {
+    color: $paletteGreen-100 !important;
+}
+
+.mrm-color--green-200 {
+    color: $paletteGreen-200 !important;
+}
+
+.mrm-color--green-300 {
+    color: $paletteGreen-300 !important;
+}
+
+.mrm-color--green-400 {
+    color: $paletteGreen-400 !important;
+}
+
+.mrm-color--green-600 {
+    color: $paletteGreen-600 !important;
+}
+
+.mrm-color--green-700 {
+    color: $paletteGreen-700 !important;
+}
+
+.mrm-color--green-800 {
+    color: $paletteGreen-800 !important;
+}
+
+.mrm-color--green-900 {
+    color: $paletteGreen-900 !important;
+}
+
+.mrm-color--green-A100 {
+    color: $paletteGreen-A100 !important;
+}
+
+.mrm-color--green-A200 {
+    color: $paletteGreen-A200 !important;
+}
+
+.mrm-color--green-A400 {
+    color: $paletteGreen-A400 !important;
+}
+
+.mrm-color--green-A700 {
+    color: $paletteGreen-A700 !important;
+}
+
+/* color light green */
+
+.mrm-color--light-green,
+.mrm-color--light-green-500 {
+    color: $paletteLightGreen-500 !important;
+}
+
+.mrm-color--light-green-50 {
+    color: $paletteLightGreen-50 !important;
+}
+
+.mrm-color--light-green-100 {
+    color: $paletteLightGreen-100 !important;
+}
+
+.mrm-color--light-green-200 {
+    color: $paletteLightGreen-200 !important;
+}
+
+.mrm-color--light-green-300 {
+    color: $paletteLightGreen-300 !important;
+}
+
+.mrm-color--light-green-400 {
+    color: $paletteLightGreen-400 !important;
+}
+
+.mrm-color--light-green-600 {
+    color: $paletteLightGreen-600 !important;
+}
+
+.mrm-color--light-green-700 {
+    color: $paletteLightGreen-700 !important;
+}
+
+.mrm-color--light-green-800 {
+    color: $paletteLightGreen-800 !important;
+}
+
+.mrm-color--light-green-900 {
+    color: $paletteLightGreen-900 !important;
+}
+
+.mrm-color--light-green-A100 {
+    color: $paletteLightGreen-A100 !important;
+}
+
+.mrm-color--light-green-A200 {
+    color: $paletteLightGreen-A200 !important;
+}
+
+.mrm-color--light-green-A400 {
+    color: $paletteLightGreen-A400 !important;
+}
+
+.mrm-color--light-green-A700 {
+    color: $paletteLightGreen-A700 !important;
+}
+
+/* color lime */
+
+.mrm-color--lime,
+.mrm-color--lime-500 {
+    color: $paletteLime-500 !important;
+}
+
+.mrm-color--lime-50 {
+    color: $paletteLime-50 !important;
+}
+
+.mrm-color--lime-100 {
+    color: $paletteLime-100 !important;
+}
+
+.mrm-color--lime-200 {
+    color: $paletteLime-200 !important;
+}
+
+.mrm-color--lime-300 {
+    color: $paletteLime-300 !important;
+}
+
+.mrm-color--lime-400 {
+    color: $paletteLime-400 !important;
+}
+
+.mrm-color--lime-600 {
+    color: $paletteLime-600 !important;
+}
+
+.mrm-color--lime-700 {
+    color: $paletteLime-700 !important;
+}
+
+.mrm-color--lime-800 {
+    color: $paletteLime-800 !important;
+}
+
+.mrm-color--lime-900 {
+    color: $paletteLime-900 !important;
+}
+
+.mrm-color--lime-A100 {
+    color: $paletteLime-A100 !important;
+}
+
+.mrm-color--lime-A200 {
+    color: $paletteLime-A200 !important;
+}
+
+.mrm-color--lime-A400 {
+    color: $paletteLime-A400 !important;
+}
+
+.mrm-color--lime-A700 {
+    color: $paletteLime-A700 !important;
+}
+
+/* color yello */
+
+.mrm-color--yellow,
+.mrm-color--yellow-500 {
+    color: $paletteYellow-500 !important;
+}
+
+.mrm-color--yellow-50 {
+    color: $paletteYellow-50 !important;
+}
+
+.mrm-color--yellow-100 {
+    color: $paletteYellow-100 !important;
+}
+
+.mrm-color--yellow-200 {
+    color: $paletteYellow-200 !important;
+}
+
+.mrm-color--yellow-300 {
+    color: $paletteYellow-300 !important;
+}
+
+.mrm-color--yellow-400 {
+    color: $paletteYellow-400 !important;
+}
+
+.mrm-color--yellow-600 {
+    color: $paletteYellow-600 !important;
+}
+
+.mrm-color--yellow-700 {
+    color: $paletteYellow-700 !important;
+}
+
+.mrm-color--yellow-800 {
+    color: $paletteYellow-800 !important;
+}
+
+.mrm-color--yellow-900 {
+    color: $paletteYellow-900 !important;
+}
+
+.mrm-color--yellow-A100 {
+    color: $paletteYellow-A100 !important;
+}
+
+.mrm-color--yellow-A200 {
+    color: $paletteYellow-A200 !important;
+}
+
+.mrm-color--yellow-A400 {
+    color: $paletteYellow-A400 !important;
+}
+
+.mrm-color--yellow-A700 {
+    color: $paletteYellow-A700 !important;
+}
+
+/* color amber */
+
+.mrm-color--amber,
+.mrm-color--amber-500 {
+    color: $paletteAmber-500 !important;
+}
+
+.mrm-color--amber-50 {
+    color: $paletteAmber-50 !important;
+}
+
+.mrm-color--amber-100 {
+    color: $paletteAmber-100 !important;
+}
+
+.mrm-color--amber-200 {
+    color: $paletteAmber-200 !important;
+}
+
+.mrm-color--amber-300 {
+    color: $paletteAmber-300 !important;
+}
+
+.mrm-color--amber-400 {
+    color: $paletteAmber-400 !important;
+}
+
+.mrm-color--amber-600 {
+    color: $paletteAmber-600 !important;
+}
+
+.mrm-color--amber-700 {
+    color: $paletteAmber-700 !important;
+}
+
+.mrm-color--amber-800 {
+    color: $paletteAmber-800 !important;
+}
+
+.mrm-color--amber-900 {
+    color: $paletteAmber-900 !important;
+}
+
+.mrm-color--amber-A100 {
+    color: $paletteAmber-A100 !important;
+}
+
+.mrm-color--amber-A200 {
+    color: $paletteAmber-A200 !important;
+}
+
+.mrm-color--amber-A400 {
+    color: $paletteAmber-A400 !important;
+}
+
+.mrm-color--amber-A700 {
+    color: $paletteAmber-A700 !important;
+}
+
+/* color orange */
+
+.mrm-color--orange,
+.mrm-color--orange-500 {
+    color: $paletteOrange-500 !important;
+}
+
+.mrm-color--orange-50 {
+    color: $paletteOrange-50 !important;
+}
+
+.mrm-color--orange-100 {
+    color: $paletteOrange-100 !important;
+}
+
+.mrm-color--orange-200 {
+    color: $paletteOrange-200 !important;
+}
+
+.mrm-color--orange-300 {
+    color: $paletteOrange-300 !important;
+}
+
+.mrm-color--orange-400 {
+    color: $paletteOrange-400 !important;
+}
+
+.mrm-color--orange-600 {
+    color: $paletteOrange-600 !important;
+}
+
+.mrm-color--orange-700 {
+    color: $paletteOrange-700 !important;
+}
+
+.mrm-color--orange-800 {
+    color: $paletteOrange-800 !important;
+}
+
+.mrm-color--orange-900 {
+    color: $paletteOrange-900 !important;
+}
+
+.mrm-color--orange-A100 {
+    color: $paletteOrange-A100 !important;
+}
+
+.mrm-color--orange-A200 {
+    color: $paletteOrange-A200 !important;
+}
+
+.mrm-color--orange-A400 {
+    color: $paletteOrange-A400 !important;
+}
+
+.mrm-color--orange-A700 {
+    color: $paletteOrange-A700 !important;
+}
+
+/* color deep orange */
+
+.mrm-color--deep-orange,
+.mrm-color--deep-orange-500 {
+    color: $paletteDeepOrange-500 !important;
+}
+
+.mrm-color--deep-orange-50 {
+    color: $paletteDeepOrange-50 !important;
+}
+
+.mrm-color--deep-orange-100 {
+    color: $paletteDeepOrange-100 !important;
+}
+
+.mrm-color--deep-orange-200 {
+    color: $paletteDeepOrange-200 !important;
+}
+
+.mrm-color--deep-orange-300 {
+    color: $paletteDeepOrange-300 !important;
+}
+
+.mrm-color--deep-orange-400 {
+    color: $paletteDeepOrange-400 !important;
+}
+
+.mrm-color--deep-orange-600 {
+    color: $paletteDeepOrange-600 !important;
+}
+
+.mrm-color--deep-orange-700 {
+    color: $paletteDeepOrange-700 !important;
+}
+
+.mrm-color--deep-orange-800 {
+    color: $paletteDeepOrange-800 !important;
+}
+
+.mrm-color--deep-orange-900 {
+    color: $paletteDeepOrange-900 !important;
+}
+
+.mrm-color--deep-orange-A100 {
+    color: $paletteDeepOrange-A100 !important;
+}
+
+.mrm-color--deep-orange-A200 {
+    color: $paletteDeepOrange-A200 !important;
+}
+
+.mrm-color--deep-orange-A400 {
+    color: $paletteDeepOrange-A400 !important;
+}
+
+.mrm-color--deep-orange-A700 {
+    color: $paletteDeepOrange-A700 !important;
+}
+
+/* color brown */
+
+.mrm-color--brown,
+.mrm-color--brown-500 {
+    color: $paletteBrown-500 !important;
+}
+
+.mrm-color--brown-50 {
+    color: $paletteBrown-50 !important;
+}
+
+.mrm-color--brown-100 {
+    color: $paletteBrown-100 !important;
+}
+
+.mrm-color--brown-200 {
+    color: $paletteBrown-200 !important;
+}
+
+.mrm-color--brown-300 {
+    color: $paletteBrown-300 !important;
+}
+
+.mrm-color--brown-400 {
+    color: $paletteBrown-400 !important;
+}
+
+.mrm-color--brown-600 {
+    color: $paletteBrown-600 !important;
+}
+
+.mrm-color--brown-700 {
+    color: $paletteBrown-700 !important;
+}
+
+.mrm-color--brown-800 {
+    color: $paletteBrown-800 !important;
+}
+
+.mrm-color--brown-900 {
+    color: $paletteBrown-900 !important;
+}
+
+/* color grey */
+
+.mrm-color--grey,
+.mrm-color--grey-500 {
+    color: $paletteGrey-500 !important;
+}
+
+.mrm-color--grey-50 {
+    color: $paletteGrey-50 !important;
+}
+
+.mrm-color--grey-100 {
+    color: $paletteGrey-100 !important;
+}
+
+.mrm-color--grey-200 {
+    color: $paletteGrey-200 !important;
+}
+
+.mrm-color--grey-300 {
+    color: $paletteGrey-300 !important;
+}
+
+.mrm-color--grey-400 {
+    color: $paletteGrey-400 !important;
+}
+
+.mrm-color--grey-600 {
+    color: $paletteGrey-600 !important;
+}
+
+.mrm-color--grey-700 {
+    color: $paletteGrey-700 !important;
+}
+
+.mrm-color--grey-800 {
+    color: $paletteGrey-800 !important;
+}
+
+.mrm-color--grey-900 {
+    color: $paletteGrey-900 !important;
+}
+
+/* color blue grey */
+
+.mrm-color--blue-grey,
+.mrm-color--blue-grey-500 {
+    color: $paletteBlueGrey-500 !important;
+}
+
+.mrm-color--blue-grey-50 {
+    color: $paletteBlueGrey-50 !important;
+}
+
+.mrm-color--blue-grey-100 {
+    color: $paletteBlueGrey-100 !important;
+}
+
+.mrm-color--blue-grey-200 {
+    color: $paletteBlueGrey-200 !important;
+}
+
+.mrm-color--blue-grey-300 {
+    color: $paletteBlueGrey-300 !important;
+}
+
+.mrm-color--blue-grey-400 {
+    color: $paletteBlueGrey-400 !important;
+}
+
+.mrm-color--blue-grey-600 {
+    color: $paletteBlueGrey-600 !important;
+}
+
+.mrm-color--blue-grey-700 {
+    color: $paletteBlueGrey-700 !important;
+}
+
+.mrm-color--blue-grey-800 {
+    color: $paletteBlueGrey-800 !important;
+}
+
+.mrm-color--blue-grey-900 {
+    color: $paletteBlueGrey-900 !important;
+}
