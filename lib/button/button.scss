@@ -1,3 +1,195 @@
-button{
-    
+button {
+    border-radius: $buttonBorderRadius;
+    height: $buttonHeight;
+    margin: $buttonMargin;
+    text-transform: uppercase;
+    font: $buttonFontSize $robotoMedium;
+    padding: $buttonPadding;
+    min-width: calc(#{$buttonInnerMinWidth} + #{nth($buttonPadding, 2)} * 2);
+    background-color: $paletteEmpty;
+    border: none;
+    transition: all $buttonTransitionSpeed linear;
+    color: $paletteBlack;
+    cursor: pointer;
+}
+
+
+/* flat button */
+
+button:focus {
+    outline: none; // background-color: $paletteBlack-12;
+}
+
+button:hover {
+    background-color: $paletteBlack-20;
+}
+
+button:active {
+    background-color: $paletteBlack-40;
+}
+
+button:disabled {
+    background-color: $paletteEmpty !important;
+    color: $paletteBlack-26;
+    cursor: auto;
+}
+
+button.mrm-button--primary{
+    color: $palettePrimary;
+}
+
+button.mrm-button--primary-dark{
+    color: $palettePrimaryDark;
+}
+
+button.mrm-button--primary-light{
+    color: $palettePrimaryLight;
+}
+
+button.mrm-button--accent{
+    color: $paletteAccent;
+}
+
+button.mrm-button--accent-dark{
+    color: $paletteAccentDark;
+}
+
+button.mrm-button--accent-light{
+    color: $paletteAccentLight;
+}
+
+
+/* raised button */
+
+button.mrm-button--raised {
+    background-color: $paletteGrey-300;
+    @include shadow-2dp();
+}
+
+button.mrm-button--raised:active {
+    @include shadow-8dp();
+}
+
+button.mrm-button--raised:disabled {
+    background-color: $paletteBlack-12 !important;
+    color: $paletteBlack-26;
+    cursor: auto;
+    box-shadow: none;
+}
+
+/* button icon */
+
+button.mrm-button--icon{
+    padding: 0px;
+    border-radius: 50%;
+    min-width: 36px;
+}
+
+button.mrm-button--icon:hover{
+    background-color: $paletteEmpty;
+}
+
+button.mrm-button--icon:active{
+    background-color: $paletteBlack-20;
+}
+
+/* button group */
+.button-group{
+
+    button{
+        margin-left: -4px;
+        margin-right: 0px;
+        border-radius: 0px;
+    }
+
+    button.mrm-button--raised:active {
+        @include shadow-2dp();
+        background-color: $paletteGrey-500;
+    }
+
+    button:first-child{
+        margin-left: $buttonMargin;
+        border-radius: $buttonBorderRadius 0 0 $buttonBorderRadius;
+    }
+
+    button:last-child{
+        margin-right: $buttonMargin;
+        border-radius: 0 $buttonBorderRadius $buttonBorderRadius 0;
+    }
+}
+
+.mrm-dark {
+    /* flat */
+    button {
+        color: $paletteWhite;
+    }
+
+    button.mrm-button--primary{
+        color: $palettePrimary;
+    }
+
+    button.mrm-button--primary-dark{
+        color: $palettePrimaryDark;
+    }
+
+    button.mrm-button--primary-light{
+        color: $palettePrimaryLight;
+    }
+
+    button.mrm-button--accent{
+        color: $paletteAccent;
+    }
+
+    button.mrm-button--accent-dark{
+        color: $paletteAccentDark;
+    }
+
+    button.mrm-button--accent-light{
+        color: $paletteAccentLight;
+    }
+
+    button:hover:not(.mrm-button--raised) {
+        background-color: $paletteWhite-20;
+    }
+    button:active {
+        background-color: $paletteWhite-40;
+    }
+    button:disabled {
+        background-color: $paletteEmpty !important;
+        color: $paletteWhite-26;
+        cursor: auto;
+    }
+    /* raised */
+    button.mrm-button--raised {
+        @include shadow-2dp();
+        color: $paletteWhite;
+    }
+
+    button.mrm-button--raised:active {
+        @include shadow-8dp();
+        
+    }
+
+    button.mrm-button--raised{
+        background-color: $palettePrimary;
+    }
+
+    button.mrm-button--raised:active{
+        background-color: $palettePrimaryDark;
+    }
+
+    button.mrm-button--raised.mrm-button--accent{
+        background-color: $paletteAccent;
+    }
+
+    button.mrm-button--raised.mrm-button--accent:active{
+        background-color: $paletteAccentDark;
+    }
+
+    button.mrm-button--raised:disabled {
+        background-color: $paletteWhite-12 !important;
+        color: $paletteWhite-30;
+        cursor: auto;
+        box-shadow: none;
+    }
 }

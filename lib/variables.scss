@@ -54,4 +54,23 @@ $cardMediaMinHeightDefault: 128;
 
 /* Colors */
 $palettePrimary: $paletteAmber-500;
-$paletteAccent: $paletteBlue-500;
+$palettePrimaryLight: $paletteAmber-300;
+$palettePrimaryDark: $paletteAmber-700;
+$paletteAccent: $paletteBlue-A200;
+$paletteAccentLight: $paletteBlue-A100;
+$paletteAccentDark: $paletteBlue-A700;
+
+
+/* ripple */
+$rippleAnimationTime: .65s;
+$rippleAnimationSize: 2.5;
+$rippleColor: $paletteGrey-800;
+
+/* button */
+$buttonPadding: 0 8px;
+$buttonMargin: 8px;
+$buttonFontSize: 14px;
+$buttonBorderRadius: 2px;
+$buttonHeight: 36px;
+$buttonInnerMinWidth: 64px;
+$buttonTransitionSpeed: .2s;

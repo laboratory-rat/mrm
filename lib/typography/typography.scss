@@ -1234,3 +1234,12 @@ body {
 .mrm-color--blue-grey-900 {
     color: $paletteBlueGrey-900 !important;
 }
+
+/* primary and accent */
+.mrm-color--primary{
+    color: $palettePrimary !important;
+}
+
+.mrm-color--accent{
+    color: $paletteAccent !important;
+}

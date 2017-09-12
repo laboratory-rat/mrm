@@ -1,0 +1,28 @@
+[ripple]{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.ripple {
+    display: block;
+    position: absolute;
+    background: $rippleColor;
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+
+/*animation effect*/
+
+.ripple.animate {
+    animation: ripple $rippleAnimationTime linear;
+}
+
+@keyframes ripple {
+    /*scale the element to 250% to safely cover the entire link and fade it out*/
+    100% {
+        opacity: 0;
+        transform: scale($rippleAnimationSize);
+    }
+}

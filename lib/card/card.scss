@@ -1,18 +1,18 @@
 /* cards basic */
 
-.mrm-card{
+.mrm-card {
     background-color: $paletteWhite;
     min-height: $cardMinHeight;
     position: relative;
     border-radius: $cardBorderRadius;
 }
 
-.mrm-card>.header{
+.mrm-card>.header {
     height: 32px;
     padding: 16px;
 }
 
-.mrm-card>.media{
+.mrm-card>.media {
     min-height: $cardMediaMinHeightDefault;
     position: relative;
     background-size: cover;
@@ -20,13 +20,13 @@
     background-position: center center;
 }
 
-@each $i in $cardMediaMinHeight{
-    .mrm-card>.media.min-#{$i}{
-        min-height: $i;
+@each $i in $cardMediaMinHeight {
+    .mrm-card>.media.min-#{$i} {
+        min-height: #{$i}px;
     }
 }
 
-.mrm-card>.media>.info{
+.mrm-card>.media>.info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -39,11 +39,11 @@
     display: inline-flex;
 }
 
-.mrm-card>.media>.info.no-background{
+.mrm-card>.media>.info.no-background {
     background-color: unset;
 }
 
-.mrm-card>.media>.info>p{
+.mrm-card>.media>.info>p {
     margin: 0;
     display: flex;
     line-height: 32px;
@@ -51,17 +51,17 @@
     flex-direction: row;
 }
 
-.mrm-card>.media>.info>.actions{
+.mrm-card>.media>.info>.actions {
     display: flex;
     flex: none;
     width: auto;
 }
 
-.mrm-card>.media>.info>.actions>i.material-icons{
+.mrm-card>.media>.info>.actions>i.material-icons {
     line-height: 32px;
 }
 
-.mrm-card>.content{
+.mrm-card>.content {
     display: block;
     margin: $cardContentMargin;
 }
@@ -69,7 +69,17 @@
 
 /* collection */
 
-.mrm-card-collection>.mrm-card{
-    border-radius: 0px;
-    border-bottom: 1px solid $paletteBlack-12;
+.mrm-card-collection {
+    .mrm-card {
+        border-radius: 0px;
+        border-bottom: 1px solid $paletteBlack-12;
+    }
+}
+
+
+/* dark */
+
+.mrm-dark .mrm-card, .mrm-dark.mrm-card {
+    border-bottom: 1px solid $paletteWhite-12;
+    color: $paletteWhite;
 }

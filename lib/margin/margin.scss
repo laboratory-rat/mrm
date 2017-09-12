@@ -1,41 +1,41 @@
 @each $i in $margins {
     .margin-#{$i} {
-        margin: $i;
+        margin: #{$i}px;
     }
 
     .margin-#{$i}--top{
-        margin-top: $i;
+        margin-top: #{$i}px;
     }
 
     .margin-#{$i}--bottom{
-        margin-bottom: $i;
+        margin-bottom: #{$i}px;
     }
 
     .margin-#{$i}--left{
-        margin-left: $i;
+        margin-left: #{$i}px;
     }
 
     .margin-#{$i}--right{
-        margin-right: $i;
+        margin-right: #{$i}px;
     }
 
     .padding-#{$i}{
-        padding: $i;
+        padding: #{$i}px;
     }
 
     .padding-#{$i}--top{
-        padding-top: $i;
+        padding-top: #{$i}px;
     }
 
     .padding-#{$i}--bottom{
-        padding-bottom: $i;
+        padding-bottom: #{$i}px;
     }
 
     .padding-#{$i}--left{
-        padding-left: $i;
+        padding-left: #{$i}px;
     }
 
     .padding-#{$i}--right{
-        padding-right: $i;
+        padding-right: #{$i}px;
     }
 }

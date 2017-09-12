@@ -570,10 +570,19 @@ $paletteBlueGrey-900: nth($paletteBlueGrey, 10);
 $paletteBlack: rgb(0,0,0);
 $paletteBlack-87: rgba(0,0,0,.87);
 $paletteBlack-54: rgba(0,0,0,.54);
+$paletteBlack-40: rgba(0,0,0,.40);
 $paletteBlack-38: rgba(0,0,0,.38);
+$paletteBlack-26: rgba(0,0,0,.26);
+$paletteBlack-20: rgba(0,0,0,.20);
 $paletteBlack-12: rgba(0,0,0,.12);
 
 $paletteWhite: rgb(255,255,255);
 $paletteWhite-70: rgba(255,255,255,.70);
 $paletteWhite-50: rgba(255,255,255,.50);
+$paletteWhite-40: rgba(255,255,255,.40);
+$paletteWhite-30: rgba(255,255,255,.30);
+$paletteWhite-26: rgba(255,255,255,.26);
+$paletteWhite-20: rgba(255,255,255,.20);
 $paletteWhite-12: rgba(255,255,255,.12);
+
+$paletteEmpty: rgba(0,0,0,0);
