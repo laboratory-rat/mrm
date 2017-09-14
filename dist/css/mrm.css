@@ -1756,7 +1756,7 @@ button {
   font: 14px "Roboto-Medium", sans-serif;
   padding: 0 8px;
   min-width: calc(64px + 8px * 2);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   transition: all 0.2s linear;
   color: black;
@@ -1773,7 +1773,7 @@ button:active {
   background-color: rgba(0, 0, 0, 0.4); }
 
 button:disabled {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   color: rgba(0, 0, 0, 0.26);
   cursor: auto; }
 
@@ -1816,7 +1816,7 @@ button.mrm-button--icon {
   min-width: 36px; }
 
 button.mrm-button--icon:hover {
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
 
 button.mrm-button--icon:active {
   background-color: rgba(0, 0, 0, 0.2); }
@@ -1858,7 +1858,7 @@ button.mrm-button--icon:active {
   .mrm-dark button:active {
     background-color: rgba(255, 255, 255, 0.4); }
   .mrm-dark button:disabled {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     color: rgba(255, 255, 255, 0.26);
     cursor: auto; }
   .mrm-dark button.mrm-button--raised {

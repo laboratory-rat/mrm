@@ -1,0 +1,31 @@
+{
+  "name": "mrm",
+  "version": "0.0.1",
+  "description": "Full material css + js Framowork based on display:grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laboratory-rat/mrm.git"
+  },
+  "keywords": [
+    "Material",
+    "Framework",
+    "MadRat",
+    "CSS",
+    "JS",
+    "grid"
+  ],
+  "author": "Laboratory rat & Maestro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laboratory-rat/mrm/issues"
+  },
+  "homepage": "https://github.com/laboratory-rat/mrm#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
