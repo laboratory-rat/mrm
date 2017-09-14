@@ -1,14 +1,22 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let cleanCSS = require('gulp-clean-css');
+let sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('build-all', function () {
+gulp.task('build-all', () => {
     gulp.src('lib/mrm.scss')
-        .pipe(sass()) // Using gulp-sass
+        .pipe(sass())
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('watch', function () {
-    gulp.watch('lib/**/*.scss', ['build-all']);
-});
+gulp.task('minimize-all', () =>{
+    gulp.src(['dist/css/*.css', '!dist/css/*.min.css'])
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS({debug: true, format: 'beautify'}))
+    .pipe(sourcemaps.write(''))
+    .pipe(gulp.dest('dist/css'));
+})
 
-gulp.task('default', ['build-all']);
+gulp.task('watch', () => gulp.watch('lib/**/*.scss', ['build-all']));
+
+gulp.task('default', ['build-all', 'minimize-all']);

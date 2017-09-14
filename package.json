@@ -26,6 +26,7 @@
   "homepage": "https://github.com/laboratory-rat/mrm#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
     "gulp-sass": "^3.1.0"
   }
 }
