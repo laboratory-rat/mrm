@@ -12,6 +12,10 @@
     transform: scale(0);
 }
 
+[ripple]:focus, [ripple]:activegit  {
+    outline: none !important; 
+    -webkit-tap-highlight-color: $paletteEmpty !important;
+}
 
 /*animation effect*/
 

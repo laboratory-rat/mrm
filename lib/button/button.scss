@@ -17,12 +17,11 @@ button {
 /* flat button */
 
 button:focus {
-    outline: none; // background-color: $paletteBlack-12;
-    -webkit-tap-highlight-color: $paletteEmpty;
+    outline: none !important; // background-color: $paletteBlack-12;
+    -webkit-tap-highlight-color: $paletteEmpty !important;
 }
 
-
-@media (min-width: $breakpointTablet){
+@media (min-width: $breakpointTablet) {
     button:hover {
         background-color: $paletteBlack-20;
     }
@@ -38,27 +37,27 @@ button:disabled {
     cursor: auto;
 }
 
-button.mrm-button--primary{
+button.mrm-button--primary {
     color: $palettePrimary;
 }
 
-button.mrm-button--primary-dark{
+button.mrm-button--primary-dark {
     color: $palettePrimaryDark;
 }
 
-button.mrm-button--primary-light{
+button.mrm-button--primary-light {
     color: $palettePrimaryLight;
 }
 
-button.mrm-button--accent{
+button.mrm-button--accent {
     color: $paletteAccent;
 }
 
-button.mrm-button--accent-dark{
+button.mrm-button--accent-dark {
     color: $paletteAccentDark;
 }
 
-button.mrm-button--accent-light{
+button.mrm-button--accent-light {
     color: $paletteAccentLight;
 }
 
@@ -81,42 +80,43 @@ button.mrm-button--raised:disabled {
     box-shadow: none;
 }
 
+
 /* button icon */
 
-button.mrm-button--icon{
+button.mrm-button--icon {
     padding: 0px;
     border-radius: 50%;
     min-width: 36px;
 }
 
-button.mrm-button--icon:hover{
-    background-color: $paletteEmpty;
+@media(min-width: $breakpointTablet) {
+    button.mrm-button--icon:hover {
+        background-color: $paletteEmpty;
+    }
 }
 
-button.mrm-button--icon:active{
+button.mrm-button--icon:active {
     background-color: $paletteBlack-20;
 }
 
-/* button group */
-.button-group{
 
-    button{
+/* button group */
+
+.button-group {
+    button {
         margin-left: -4px;
         margin-right: 0px;
         border-radius: 0px;
     }
-
     button.mrm-button--raised:active {
         @include shadow-2dp();
         background-color: $paletteGrey-500;
     }
-
-    button:first-child{
+    button:first-child {
         margin-left: $buttonMargin;
         border-radius: $buttonBorderRadius 0 0 $buttonBorderRadius;
     }
-
-    button:last-child{
+    button:last-child {
         margin-right: $buttonMargin;
         border-radius: 0 $buttonBorderRadius $buttonBorderRadius 0;
     }
@@ -127,33 +127,28 @@ button.mrm-button--icon:active{
     button {
         color: $paletteWhite;
     }
-
-    button.mrm-button--primary{
+    button.mrm-button--primary {
         color: $palettePrimary;
     }
-
-    button.mrm-button--primary-dark{
+    button.mrm-button--primary-dark {
         color: $palettePrimaryDark;
     }
-
-    button.mrm-button--primary-light{
+    button.mrm-button--primary-light {
         color: $palettePrimaryLight;
     }
-
-    button.mrm-button--accent{
+    button.mrm-button--accent {
         color: $paletteAccent;
     }
-
-    button.mrm-button--accent-dark{
+    button.mrm-button--accent-dark {
         color: $paletteAccentDark;
     }
-
-    button.mrm-button--accent-light{
+    button.mrm-button--accent-light {
         color: $paletteAccentLight;
     }
-
-    button:hover:not(.mrm-button--raised) {
-        background-color: $paletteWhite-20;
+    @media (min-width: $breakpointTablet) {
+        button:hover:not(.mrm-button--raised) {
+            background-color: $paletteWhite-20;
+        }
     }
     button:active {
         background-color: $paletteWhite-40;
@@ -168,28 +163,21 @@ button.mrm-button--icon:active{
         @include shadow-2dp();
         color: $paletteWhite;
     }
-
     button.mrm-button--raised:active {
         @include shadow-8dp();
-        
     }
-
-    button.mrm-button--raised{
+    button.mrm-button--raised {
         background-color: $palettePrimary;
     }
-
-    button.mrm-button--raised:active{
+    button.mrm-button--raised:active {
         background-color: $palettePrimaryDark;
     }
-
-    button.mrm-button--raised.mrm-button--accent{
+    button.mrm-button--raised.mrm-button--accent {
         background-color: $paletteAccent;
     }
-
-    button.mrm-button--raised.mrm-button--accent:active{
+    button.mrm-button--raised.mrm-button--accent:active {
         background-color: $paletteAccentDark;
     }
-
     button.mrm-button--raised:disabled {
         background-color: $paletteWhite-12 !important;
         color: $paletteWhite-30;
