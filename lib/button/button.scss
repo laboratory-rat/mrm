@@ -18,10 +18,14 @@ button {
 
 button:focus {
     outline: none; // background-color: $paletteBlack-12;
+    -webkit-tap-highlight-color: $paletteEmpty;
 }
 
-button:hover {
-    background-color: $paletteBlack-20;
+
+@media (min-width: $breakpointTablet){
+    button:hover {
+        background-color: $paletteBlack-20;
+    }
 }
 
 button:active {

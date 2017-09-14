@@ -1764,11 +1764,12 @@ button {
 
 /* flat button */
 button:focus {
-  outline: none; }
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.2); }
-
+@media (min-width: 640px) {
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.2); } }
 button:active {
   background-color: rgba(0, 0, 0, 0.4); }
 
