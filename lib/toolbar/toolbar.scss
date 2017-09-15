@@ -1,0 +1,68 @@
+.toolbar{
+    height: $toolbarHeightMobile;
+    @include shadow-6dp();
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background-color: $palettePrimary;
+}
+
+
+
+.toolbar>*{
+    display: inline-block;
+}
+
+.toolbar{
+    .drawer-icon{
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        margin-left: 8px;
+
+        button{
+            margin: 10px 8px 10px 8px;
+        }
+    }
+
+    .title{
+        line-height: $toolbarHeightMobile;
+        font-weight: normal;
+        height: $toolbarHeightMobile;
+        padding: 0;
+        margin: 0;
+        margin-left: 16px;
+        vertical-align: bottom;
+        font-size: 20px;
+    }
+}
+
+@media screen and (orientation:landscape){
+    .toolbar{
+        height: $toolbarHeightMobileLandscape;
+    }
+}
+
+@media(min-width: $breakpointTablet){
+    .toolbar{
+        height: $toolbarHeight;
+
+        button{
+            margin: 14px 8px 14px 8px !important;
+        }
+
+        .drawer-icon{
+            margin-left: 16px;
+        }
+
+        .title{
+            line-height: $toolbarHeight;
+            font-weight: normal;
+            height: $toolbarHeight;
+        }
+    }
+
+}
+
+
+

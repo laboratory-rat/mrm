@@ -6,151 +6,170 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../dist/css/mrm.css">
+    <link rel="stylesheet" href="assets/css/mrm.css">
     <!-- <link rel="stylesheet" href="../dist/css/mrm.min.css"> -->
-    <link rel="stylesheet" href="assets/css/mrs-layout.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- <link rel="stylesheet" href="assets/css/mrs-layout.min.css"> -->
 </head>
 
 <body style='background-color: #eee;'>
-    <div class="mrm-grid padding-16--top">
-        <div class="mrm-cell col-3--desk col-1--tab hide--mob "></div>
-        <div class="mrm-cell col-4--mob col-6--tab col-6--desk mrm-card mrm-shadow--2dp">
-            <div class="header">
-
+    <div class="layout">
+        <header class="toolbar">
+            <div class="drawer-icon">
+                <button ripple class="mrm-button mrm-button--icon">
+                    <i class="material-icons">menu</i>
+                </button>
             </div>
-            <div class="media min-256 material-back-1">
-                <div class="info hide--mob ">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <div class="actions">
-                        <i class="material-icons">star</i>
+            <h1 class='title'>
+                Mad Rat Material
+            </h1>
+        </header>
+        <aside class="drawer">
+
+        </aside>
+        <main class="content">
+            <div class="mrm-grid padding-16--top">
+                <div class="mrm-cell col-3--desk col-1--tab hide--mob "></div>
+                <div class="mrm-cell col-4--mob col-6--tab col-6--desk mrm-card mrm-shadow--2dp">
+                    <div class="header">
+
+                    </div>
+                    <div class="media min-256 material-back-1">
+                        <div class="info hide--mob ">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <div class="actions">
+                                <i class="material-icons">star</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='content'>
+                        <h3>Some title </h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestiae maiores animi atque enim numquam, modi corporis
+                        porro suscipit veritatis possimus? Sunt ipsam vitae eius nihil asperiores aut. Quo, eum!
                     </div>
                 </div>
             </div>
-            <div class='content'>
-                <h3>Some title </h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestiae maiores animi atque enim numquam, modi corporis
-                porro suscipit veritatis possimus? Sunt ipsam vitae eius nihil asperiores aut. Quo, eum!
+            <div class="mrm-grid padding-16--top">
+                <div class="mrm-cell col-3--desk col-1--tab hide--mob "></div>
+                <div class="mrm-cell col-4--mob col-6--tab col-6--desk mrm-card-collection mrm-shadow--2dp" id='parent'>
+                    <div class="mrm-card">
+                        <div class="header">
+                            <span>Light</span>
+                        </div>
+                        <button class=''>common</button>
+                        <button class='mrm-button--primary'>primary</button>
+                        <button class='mrm-button--accent'>accent</button>
+                        <button disabled class=''>disabled</button>
+                        <br>
+                        <button class='mrm-button--raised'>common</button>
+                        <button class='mrm-button--raised mrm-button--primary'>primary</button>
+                        <button class='mrm-button--raised mrm-button--accent'>accent</button>
+                        <button class='mrm-button--raised mrm-background--primary mrm-color--white'>colored</button>
+                        <button disabled class='mrm-button--raised'>disabled</button>
+                    </div>
+                    <div class="mrm-card">
+                        <div class="header">
+                            <span>Light and ripple</span>
+                        </div>
+                        <button ripple class=''>common</button>
+                        <button ripple class='mrm-button--primary'>primary</button>
+                        <button ripple class='mrm-button--accent'>accent</button>
+                        <button ripple disabled class=''>disabled</button>
+                        <br>
+                        <button ripple class='mrm-button--raised'>common</button>
+                        <button ripple class='mrm-button--raised mrm-button--primary'>primary</button>
+                        <button ripple class='mrm-button--raised mrm-button--accent'>accent</button>
+                        <button ripple class='mrm-button--raised mrm-background--primary mrm-color--white'>colored</button>
+                        <button ripple disabled class='mrm-button--raised'>disabled</button>
+                    </div>
+
+                    <div class="mrm-card">
+                        <div class="header"><span>Button icon</span></div>
+                        <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                    </div>
+
+                    <div class="mrm-card">
+                        <div class="header"><span>Button icon and ripple</span></div>
+                        <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                    </div>
+
+                    <div class="mrm-card mrm-dark mrm-background--grey-700">
+                        <div class="header"><span>Dark</span></div>
+                        <button class=''>common</button>
+                        <button class='mrm-button--primary'>primary</button>
+                        <button class='mrm-button--accent'>accent</button>
+                        <button disabled class=''>disabled</button>
+                        <br>
+                        <button class='mrm-button--raised'>common</button>
+                        <button class='mrm-button--raised mrm-button--primary'>primary</button>
+                        <button class='mrm-button--raised mrm-button--accent'>accent</button>
+                        <button disabled class='mrm-button--raised'>disabled</button>
+                    </div>
+
+                    <div class="mrm-card mrm-dark  mrm-background--grey-700">
+                        <div class="header"><span>Dark and ripple</span></div>
+                        <button ripple class=''>common</button>
+                        <button ripple class='mrm-button--primary'>primary</button>
+                        <button ripple class='mrm-button--accent'>accent</button>
+                        <button ripple disabled class=''>disabled</button>
+                        <br>
+                        <button ripple class='mrm-button--raised'>common</button>
+                        <button ripple class='mrm-button--raised mrm-button--primary'>primary</button>
+                        <button ripple class='mrm-button--raised mrm-button--accent'>accent</button>
+                        <button ripple disabled class='mrm-button--raised'>disabled</button>
+                    </div>
+
+                    <div class="mrm-card mrm-dark  mrm-background--grey-700">
+                        <div class="header"><span>Dark button icon</span></div>
+                        <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                    </div>
+
+                    <div class="mrm-card mrm-dark  mrm-background--grey-700">
+                        <div class="header"><span>Dark button icon and ripple</span></div>
+                        <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                    </div>
+
+                    <div class="mrm-card">
+                        <div class="header"><span>Button group</span></div>
+                        <div class='button-group'>
+                            <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
+                            <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
+                            <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
+                            <button disabled class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
+                        </div>
+
+                        <br>
+                        <div class='button-group'>
+                            <button class='mrm-button--raised'>common</button>
+                            <button class='mrm-button--raised mrm-button--primary'>primary</button>
+                            <button class='mrm-button--raised mrm-button--accent'>accent</button>
+                            <button disabled class='mrm-button--raised'>disabled</button>
+                        </div>
+                    </div>
+
+                    <div ripple class="mrm-card"></div>
+                    <div ripple class="mrm-card"></div>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
-    <div class="mrm-grid padding-16--top">
-        <div class="mrm-cell col-3--desk col-1--tab hide--mob "></div>
-        <div class="mrm-cell col-4--mob col-6--tab col-6--desk mrm-card-collection mrm-shadow--2dp" id='parent'>
-            <div class="mrm-card">
-                <div class="header">
-                    <span>Light</span>
-                </div>
-                <button class=''>common</button>
-                <button class='mrm-button--primary'>primary</button>
-                <button class='mrm-button--accent'>accent</button>
-                <button disabled class=''>disabled</button>
-                <br>
-                <button class='mrm-button--raised'>common</button>
-                <button class='mrm-button--raised mrm-button--primary'>primary</button>
-                <button class='mrm-button--raised mrm-button--accent'>accent</button>
-                <button class='mrm-button--raised mrm-background--primary mrm-color--white'>colored</button>
-                <button disabled class='mrm-button--raised'>disabled</button>
-            </div>
-            <div class="mrm-card">
-                <div class="header">
-                    <span>Light and ripple</span>
-                </div>
-                <button ripple class=''>common</button>
-                <button ripple class='mrm-button--primary'>primary</button>
-                <button ripple class='mrm-button--accent'>accent</button>
-                <button ripple disabled class=''>disabled</button>
-                <br>
-                <button ripple class='mrm-button--raised'>common</button>
-                <button ripple class='mrm-button--raised mrm-button--primary'>primary</button>
-                <button ripple class='mrm-button--raised mrm-button--accent'>accent</button>
-                <button ripple class='mrm-button--raised mrm-background--primary mrm-color--white'>colored</button>
-                <button ripple disabled class='mrm-button--raised'>disabled</button>
-            </div>
 
-            <div class="mrm-card">
-                <div class="header"><span>Button icon</span></div>
-                <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
-            </div>
 
-            <div class="mrm-card">
-                <div class="header"><span>Button icon and ripple</span></div>
-                <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
-            </div>
-
-            <div class="mrm-card mrm-dark mrm-background--grey-700">
-                <div class="header"><span>Dark</span></div>
-                <button class=''>common</button>
-                <button class='mrm-button--primary'>primary</button>
-                <button class='mrm-button--accent'>accent</button>
-                <button disabled class=''>disabled</button>
-                <br>
-                <button class='mrm-button--raised'>common</button>
-                <button class='mrm-button--raised mrm-button--primary'>primary</button>
-                <button class='mrm-button--raised mrm-button--accent'>accent</button>
-                <button disabled class='mrm-button--raised'>disabled</button>
-            </div>
-
-            <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                <div class="header"><span>Dark and ripple</span></div>
-                <button ripple class=''>common</button>
-                <button ripple class='mrm-button--primary'>primary</button>
-                <button ripple class='mrm-button--accent'>accent</button>
-                <button ripple disabled class=''>disabled</button>
-                <br>
-                <button ripple class='mrm-button--raised'>common</button>
-                <button ripple class='mrm-button--raised mrm-button--primary'>primary</button>
-                <button ripple class='mrm-button--raised mrm-button--accent'>accent</button>
-                <button ripple disabled class='mrm-button--raised'>disabled</button>
-            </div>
-
-            <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                    <div class="header"><span>Dark button icon</span></div>
-                    <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                </div>
-    
-                <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                    <div class="header"><span>Dark button icon and ripple</span></div>
-                    <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                </div>
-
-            <div class="mrm-card">
-                <div class="header"><span>Button group</span></div>
-                <div class='button-group'>
-                    <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
-                    <button disabled class='mrm-button--raised mrm-button--icon'><i class='material-icons'>star</i></button>
-                </div>
-
-                <br>
-                <div class='button-group'>
-                    <button class='mrm-button--raised'>common</button>
-                    <button class='mrm-button--raised mrm-button--primary'>primary</button>
-                    <button class='mrm-button--raised mrm-button--accent'>accent</button>
-                    <button disabled class='mrm-button--raised'>disabled</button>
-                </div>
-            </div>
-
-            <div ripple class="mrm-card"></div>
-            <div ripple class="mrm-card"></div>
-        </div>
-    </div>
-    <script src='../dist/js/mrm.js'></script>
+    <script src='assets/js/mrm.js'></script>
     <!-- <script src='../dist/js/mrm.js'></script> -->
     <!-- <script>
         window._mrm.configure({
