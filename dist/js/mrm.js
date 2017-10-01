@@ -114,7 +114,7 @@ function __setMetaColor(color) {
     metaIOs = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
     if (metaIOs === undefined || metaIOs === null) {
         var metaIOs = document.createElement('meta');
-        metaIOs.name = 'theme-color';
+        metaIOs.name = 'apple-mobile-web-app-status-bar-style';
         metaIOs.content = color;
         document.getElementsByTagName('head')[0].appendChild(metaIOs);
     } else {
@@ -124,7 +124,7 @@ function __setMetaColor(color) {
     metaWin = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
     if (metaWin === undefined || metaWin === null) {
         var metaWin = document.createElement('meta');
-        metaWin.name = 'theme-color';
+        metaWin.name = 'apple-mobile-web-app-status-bar-style';
         metaWin.content = color;
         document.getElementsByTagName('head')[0].appendChild(metaWin);
     } else {

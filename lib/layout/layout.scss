@@ -11,12 +11,12 @@
     margin: 0 auto;
 }
 
-.layout.fixed-toolbar>.toolbar{
+.layout.toolbar--fixed>.toolbar{
     position: fixed;
     top: 0px;
     left: 0px;
 }
 
-.layout.fixed-toolbar>.content{
+.layout.toolbar--fixed>.content{
     margin-top: $toolbarHeight;
 }
