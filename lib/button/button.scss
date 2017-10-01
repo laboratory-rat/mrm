@@ -99,29 +99,6 @@ button.mrm-button--icon:active {
     background-color: $paletteBlack-20;
 }
 
-
-/* button group */
-
-.button-group {
-    button {
-        margin-left: -4px;
-        margin-right: 0px;
-        border-radius: 0px;
-    }
-    button.mrm-button--raised:active {
-        @include shadow-2dp();
-        background-color: $paletteGrey-500;
-    }
-    button:first-child {
-        margin-left: $buttonMargin;
-        border-radius: $buttonBorderRadius 0 0 $buttonBorderRadius;
-    }
-    button:last-child {
-        margin-right: $buttonMargin;
-        border-radius: 0 $buttonBorderRadius $buttonBorderRadius 0;
-    }
-}
-
 .mrm-dark {
     /* flat */
     button {

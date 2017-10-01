@@ -1825,6 +1825,60 @@ body {
 .layout.toolbar--fixed > .content {
   margin-top: 64px; }
 
+.layout .drawer {
+  z-index: 1100;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  transition: all 0.225s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer; }
+  .layout .drawer .drawer--content {
+    z-index: 1300;
+    width: calc(100% - 56px);
+    height: 100%;
+    max-width: 320px;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    background: white;
+    cursor: auto;
+    animation-duration: 0.225s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: drawer-close;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.layout.drawer-active .drawer {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.26); }
+  .layout.drawer-active .drawer .drawer--content {
+    left: 0;
+    animation-name: drawer-open; }
+
+@media (min-width: 960px) {
+  .layout .drawer .drawer--content {
+    max-width: 400px; } }
+
+@keyframes drawer-open {
+  0% {
+    left: -400px;
+    z-index: 1200; }
+  100% {
+    left: 0; } }
+
+@keyframes drawer-close {
+  0% {
+    left: 0;
+    z-index: 1200; }
+  99% {
+    z-index: 1200;
+    left: -400px; }
+  100% {
+    z-index: -1200; } }
+
 button {
   border-radius: 2px;
   height: 36px;
@@ -1900,24 +1954,6 @@ button.mrm-button--icon {
 
 button.mrm-button--icon:active {
   background-color: rgba(0, 0, 0, 0.2); }
-
-/* button group */
-.button-group button {
-  margin-left: -4px;
-  margin-right: 0px;
-  border-radius: 0px; }
-
-.button-group button.mrm-button--raised:active {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  background-color: #9e9e9e; }
-
-.button-group button:first-child {
-  margin-left: 8px;
-  border-radius: 2px 0 0 2px; }
-
-.button-group button:last-child {
-  margin-right: 8px;
-  border-radius: 0 2px 2px 0; }
 
 .mrm-dark {
   /* flat */
