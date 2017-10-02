@@ -11,6 +11,10 @@ function __getMrm() {
         useUpdate: false,
         updateInterval: 100,
 
+        drawer: null,
+        drawerButton: null,
+        drawerActive: false,
+
         updateCycle: null,
 
         init: function () {
@@ -30,6 +34,29 @@ function __getMrm() {
             if (toolbars.length > 0) {
                 var color = '#' + __rgbToHex(__shadeColor(getComputedStyle(toolbars[0]).getPropertyValue("background-color"), .10));
                 __setMetaColor(color);
+            }
+
+            if (this.drawer === null) {
+                var drawerButtonList = document.getElementsByClassName('drawer-icon');
+                var drawerList = document.getElementsByClassName('drawer');
+
+                if (drawerButtonList !== null && drawerButtonList.length > 0)
+                    this.drawerButton = drawerButtonList[0];
+
+                if (drawerList !== null && drawerList.length > 0)
+                    this.drawer = drawerList[0];
+
+                if (this.drawer !== null && this.drawerButton !== null) {
+                    this.drawerButton.addEventListener('click', function () {
+                        window._mrm.drawerToggle();
+                    });
+
+                    this.drawer.addEventListener('click', function (event) {
+                        if (event.isTrusted && event.target && event.target === window._mrm.drawer) {
+                            window._mrm.drawerAction(false);
+                        }
+                    });
+                }
             }
         },
 
@@ -51,7 +78,28 @@ function __getMrm() {
             if (options.toolbarDark !== undefined && options.toolbarDark !== null) {
                 __setMetaColor(options.toolbarDark);
             }
-        }
+        },
+
+        drawerAction: function (show) {
+            if (!this.drawer || !this.drawerButton) return;
+            if (show) {
+                this.drawer.classList.add('active');
+                this.drawer.classList.remove('close');
+            } else {
+                this.drawer.classList.remove('active');
+                this.drawer.classList.add('close');
+            }
+        },
+
+        drawerToggle: function () {
+            this.drawerAction(!this.isDrawerActive());
+        },
+
+        isDrawerActive: function () {
+            if (!this.drawer) return false;
+            return this.drawer.classList.contains('active');
+        },
+
     }
 }
 
@@ -133,7 +181,12 @@ function __setMetaColor(color) {
 }
 
 function __shadeColor(color, percent) {
-    var f = color.split(","), t = percent < 0 ? 0 : 255, p = percent < 0 ? percent * -1 : percent, R = parseInt(f[0].slice(4)), G = parseInt(f[1]), B = parseInt(f[2]);
+    var f = color.split(","),
+        t = percent < 0 ? 0 : 255,
+        p = percent < 0 ? percent * -1 : percent,
+        R = parseInt(f[0].slice(4)),
+        G = parseInt(f[1]),
+        B = parseInt(f[2]);
     return "rgb(" + (Math.round((t - R) * p) + R) + "," + (Math.round((t - G) * p) + G) + "," + (Math.round((t - B) * p) + B) + ")";
 }
 
@@ -143,7 +196,6 @@ function __rgbToHex(color) {
     if (aRGB) {
         color = '';
         for (var i = 1; i <= 3; i++) color += Math.round((aRGB[i][aRGB[i].length - 1] == "%" ? 2.55 : 1) * parseInt(aRGB[i])).toString(16).replace(/^(.)$/, '0$1');
-    }
-    else color = color.replace(/^#?([\da-f])([\da-f])([\da-f])$/i, '$1$1$2$2$3$3');
+    } else color = color.replace(/^#?([\da-f])([\da-f])([\da-f])$/i, '$1$1$2$2$3$3');
     return color;
 }

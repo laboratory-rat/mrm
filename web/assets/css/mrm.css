@@ -1780,6 +1780,10 @@ body {
   .toolbar .drawer-icon button {
     margin: 10px 8px 10px 8px; }
 
+.toolbar > .content {
+  width: calc(100% - 80px);
+  vertical-align: bottom; }
+
 .toolbar .title {
   line-height: 56px;
   font-weight: normal;
@@ -1846,17 +1850,48 @@ body {
     left: -400px;
     background: white;
     cursor: auto;
-    animation-duration: 0.225s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-name: drawer-close;
+    animation: none;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+    .layout .drawer .drawer--content .header {
+      height: 160px; }
 
-.layout.drawer-active .drawer {
+.layout .drawer.close .drawer--content {
+  animation-duration: 0.225s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-name: drawer-close; }
+
+.layout .drawer.active {
   pointer-events: all;
   background: rgba(0, 0, 0, 0.26); }
-  .layout.drawer-active .drawer .drawer--content {
+  .layout .drawer.active .drawer--content {
     left: 0;
-    animation-name: drawer-open; }
+    animation-name: drawer-open;
+    animation-duration: 0.225s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+@media (min-width: 960px) {
+  .layout.drawer--fixed .drawer {
+    position: fixed;
+    width: 319px;
+    pointer-events: all; }
+    .layout.drawer--fixed .drawer .drawer--content {
+      position: relative;
+      left: 0;
+      top: 0;
+      max-width: 319px;
+      width: 319px;
+      box-shadow: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.26);
+      animation-name: drawer-open;
+      animation-duration: 0.225s;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  .layout.drawer--fixed > .toolbar > .content {
+    padding-left: 316px;
+    width: calc(100% - 332px); }
+  .layout.drawer--fixed > .toolbar > .drawer-icon {
+    display: none; }
+  .layout.drawer--fixed > .content {
+    margin-left: 320px; } }
 
 @media (min-width: 960px) {
   .layout .drawer .drawer--content {

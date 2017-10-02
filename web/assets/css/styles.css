@@ -1,3 +1,10 @@
 .media{
     background-image: url('../img/material-1.jpg');
 }
+
+.drawer .header{
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-image: url('../img/placeholders/placeholder-1.jpg');
+}

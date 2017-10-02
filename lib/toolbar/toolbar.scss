@@ -1,4 +1,4 @@
-.toolbar{
+.toolbar {
     height: $toolbarHeightMobile;
     @include shadow-6dp();
     width: 100%;
@@ -7,25 +7,25 @@
     background-color: $palettePrimary;
 }
 
-
-
-.toolbar>*{
+.toolbar>* {
     display: inline-block;
 }
 
-.toolbar{
-    .drawer-icon{
+.toolbar {
+    .drawer-icon {
         position: relative;
         display: inline-block;
         height: 100%;
         margin-left: 8px;
-
-        button{
+        button {
             margin: 10px 8px 10px 8px;
         }
     }
-
-    .title{
+    >.content {
+        width: calc(100% - 80px);
+        vertical-align: bottom;
+    }
+    .title {
         line-height: $toolbarHeightMobile;
         font-weight: normal;
         height: $toolbarHeightMobile;
@@ -37,32 +37,25 @@
     }
 }
 
-@media screen and (orientation:landscape){
-    .toolbar{
+@media screen and (orientation:landscape) {
+    .toolbar {
         height: $toolbarHeightMobileLandscape;
     }
 }
 
-@media(min-width: $breakpointTablet){
-    .toolbar{
+@media(min-width: $breakpointTablet) {
+    .toolbar {
         height: $toolbarHeight;
-
-        button{
+        button {
             margin: 14px 8px 14px 8px !important;
         }
-
-        .drawer-icon{
+        .drawer-icon {
             margin-left: 16px;
         }
-
-        .title{
+        .title {
             line-height: $toolbarHeight;
             font-weight: normal;
             height: $toolbarHeight;
         }
     }
-
 }
-
-
-
