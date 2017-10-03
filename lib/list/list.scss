@@ -1,0 +1,40 @@
+ul.mrm-list {
+  width: 100%;
+  padding: 0px;
+  margin: 8px 0 0 0;
+  display: block;
+  >.mrm-list--element {
+    list-style: none;
+    display: block;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    border-bottom: 1px solid $paletteBlack-17;
+    padding: 0 16px;
+    .mrm-list--content {
+      display: inline-block;
+      line-height: 48px;
+      height: 48px;
+    }
+
+    .mrm-list--caption{
+      display: none;
+    }
+  }
+  >.mrm-list--element-1-line {
+    height: 48px;
+    i.mrm-list--avatar {
+      width: 32px;
+      height: 32px;
+      margin-right: 24px;
+      vertical-align: middle;
+      line-height: 32px;
+      text-align: center;
+      color: $paletteBlack-54;
+    }
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -3,62 +3,62 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url("fonts/Roboto-Medium.ttf") format("ttf");
+    src: url(fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Light';
-    src: url("fonts/Roboto-Light.ttf") format("ttf");
+    src: url(fonts/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Thin';
-    src: url("fonts/Roboto-Thin.ttf") format("ttf");
+    src: url(fonts/Roboto-Thin.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Black';
-    src: url('fonts/Roboto-Black.ttf') format('ttf');
+    src: url(fonts/Roboto-Black.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-BlackItalic';
-    src: url('fonts/Roboto-BlackItalic.ttf') format('ttf');
+    src: url(fonts/Roboto-BlackItalic.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('fonts/Roboto-Bold.ttf') format('ttf');
+    src: url(fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-BoldItalic';
-    src: url('fonts/Roboto-BoldItalic.ttf') format('ttf');
+    src: url(fonts/Roboto-BoldItalic.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Italic';
-    src: url('fonts/Roboto-Italic.ttf') format('ttf');
+    src: url(fonts/Roboto-Italic.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-LightItalic';
-    src: url('fonts/Roboto-LightItalic.ttf') format('ttf');
+    src: url(fonts/Roboto-LightItalic.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-MediumItalic';
-    src: url('fonts/Roboto-MediumItalic.ttf') format('ttf');
+    src: url(fonts/Roboto-MediumItalic.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+    src: url(fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Roboto-ThinItalic';
-    src: url('fonts/Roboto-ThinItalic.ttf') format('ttf');
+    src: url(fonts/Roboto-ThinItalic.ttf);
 }
 
 
@@ -123,43 +123,45 @@ body {
 
 /* text colors */
 
+
 /* basic */
 
-.mrm-color--white{
+.mrm-color--white {
     color: $paletteWhite !important;
 }
 
-.mrm-color--white-70{
+.mrm-color--white-70 {
     color: $paletteWhite-70 !important;
 }
 
-.mrm-color--white-50{
+.mrm-color--white-50 {
     color: $paletteWhite-50 !important;
 }
 
-.mrm-color--white-12{
+.mrm-color--white-12 {
     color: $paletteWhite-12 !important;
 }
 
-.mrm-color--black{
+.mrm-color--black {
     color: $paletteBlack !important;
 }
 
-.mrm-color--black-87{
+.mrm-color--black-87 {
     color: $paletteBlack-87 !important;
 }
 
-.mrm-color--black-54{
+.mrm-color--black-54 {
     color: $paletteBlack-54 !important;
 }
 
-.mrm-color--black-38{
+.mrm-color--black-38 {
     color: $paletteBlack-38 !important;
 }
 
-.mrm-color--black-12{
+.mrm-color--black-12 {
     color: $paletteBlack-12 !important;
 }
+
 
 /* color red */
 
@@ -220,6 +222,7 @@ body {
     color: $paletteRed-A700 !important;
 }
 
+
 /* color pink */
 
 .mrm-color--pink,
@@ -279,6 +282,7 @@ body {
     color: $palettePink-A700 !important;
 }
 
+
 /* color purple */
 
 .mrm-color--purple,
@@ -337,6 +341,7 @@ body {
 .mrm-color--purple-A700 {
     color: $palettePurple-A700 !important;
 }
+
 
 /* color deep purple */
 
@@ -457,6 +462,7 @@ body {
     color: $paletteIndigo-A700 !important;
 }
 
+
 /* color blue */
 
 .mrm-color--blue,
@@ -515,6 +521,7 @@ body {
 .mrm-color--blue-A700 {
     color: $paletteBlue-A700 !important;
 }
+
 
 /* color light blue */
 
@@ -575,6 +582,7 @@ body {
     color: $paletteLightBlue-A700 !important;
 }
 
+
 /* color light cyan */
 
 .mrm-color--cyan,
@@ -633,6 +641,7 @@ body {
 .mrm-color--cyan-A700 {
     color: $paletteCyan-A700 !important;
 }
+
 
 /* color light teal */
 
@@ -693,6 +702,7 @@ body {
     color: $paletteTeal-A700 !important;
 }
 
+
 /* color green */
 
 .mrm-color--green,
@@ -751,6 +761,7 @@ body {
 .mrm-color--green-A700 {
     color: $paletteGreen-A700 !important;
 }
+
 
 /* color light green */
 
@@ -811,6 +822,7 @@ body {
     color: $paletteLightGreen-A700 !important;
 }
 
+
 /* color lime */
 
 .mrm-color--lime,
@@ -869,6 +881,7 @@ body {
 .mrm-color--lime-A700 {
     color: $paletteLime-A700 !important;
 }
+
 
 /* color yello */
 
@@ -929,6 +942,7 @@ body {
     color: $paletteYellow-A700 !important;
 }
 
+
 /* color amber */
 
 .mrm-color--amber,
@@ -987,6 +1001,7 @@ body {
 .mrm-color--amber-A700 {
     color: $paletteAmber-A700 !important;
 }
+
 
 /* color orange */
 
@@ -1047,6 +1062,7 @@ body {
     color: $paletteOrange-A700 !important;
 }
 
+
 /* color deep orange */
 
 .mrm-color--deep-orange,
@@ -1106,6 +1122,7 @@ body {
     color: $paletteDeepOrange-A700 !important;
 }
 
+
 /* color brown */
 
 .mrm-color--brown,
@@ -1148,6 +1165,7 @@ body {
 .mrm-color--brown-900 {
     color: $paletteBrown-900 !important;
 }
+
 
 /* color grey */
 
@@ -1192,6 +1210,7 @@ body {
     color: $paletteGrey-900 !important;
 }
 
+
 /* color blue grey */
 
 .mrm-color--blue-grey,
@@ -1235,11 +1254,13 @@ body {
     color: $paletteBlueGrey-900 !important;
 }
 
+
 /* primary and accent */
-.mrm-color--primary{
+
+.mrm-color--primary {
     color: $palettePrimary !important;
 }
 
-.mrm-color--accent{
+.mrm-color--accent {
     color: $paletteAccent !important;
 }

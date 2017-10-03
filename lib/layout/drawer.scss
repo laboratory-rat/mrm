@@ -47,7 +47,7 @@
 }
 
 @media(min-width: $breakpointDesktop) {
-  .layout.drawer--fixed {
+  .layout.layout--drawer-fixed {
     .drawer {
       position: fixed;
       width: 319px;
@@ -61,9 +61,9 @@
         box-shadow: none;
         border-right: 1px solid $paletteBlack-26;
 
-        animation-name: drawer-open;
-        animation-duration: $animDurationShort;
-        animation-timing-function: $animFunctionStandart;
+        // animation-name: drawer-open;
+        // animation-duration: $animDurationShort;
+        // animation-timing-function: $animFunctionStandart;
       }
     }
 

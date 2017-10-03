@@ -13,7 +13,7 @@
 </head>
 
 <body style='background-color: #eee;'>
-    <div class="layout drawer--fixed">
+    <div class="layout layout--drawer-fixed">
         <header class="toolbar">
             <div class="drawer-icon">
                 <button ripple class="mrm-button mrm-button--icon">
@@ -32,6 +32,20 @@
                 <div class="header">
 
                 </div>
+                <ul class='mrm-list margin-0'>
+                    <a ripple href='#' class='mrm-list--element mrm-list--element-1-line'>
+                        <i class='material-icons mrm-list--avatar'>home</i>
+                        <span class='mrm-list--content'>Home</span>
+                    </a>
+                    <a ripple href='#' class='mrm-list--element mrm-list--element-1-line'>
+                        <i class='material-icons mrm-list--avatar'>edit</i>
+                        <span class='mrm-list--content'>Edit</span>
+                    </a>
+                    <a ripple href='#' class='mrm-list--element mrm-list--element-1-line'>
+                        <i class='material-icons mrm-list--avatar'>shop_cart</i>
+                        <span class='mrm-list--content'>Cart</span>
+                    </a>
+                </ul>
             </div>
         </aside>
         <main class="content">
@@ -93,23 +107,45 @@
                     </div>
 
                     <div class="mrm-card">
-                        <div class="header"><span>Button icon</span></div>
-                        <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <div class="header">
+                            <span>Button icon</span>
+                        </div>
+                        <button class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button class='mrm-button--primary mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button class='mrm-button--accent mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button disabled class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
                     </div>
 
                     <div class="mrm-card">
-                        <div class="header"><span>Button icon and ripple</span></div>
-                        <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <div class="header">
+                            <span>Button icon and ripple</span>
+                        </div>
+                        <button ripple class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple class='mrm-button--primary mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple class='mrm-button--accent mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple disabled class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
                     </div>
 
                     <div class="mrm-card mrm-dark mrm-background--grey-700">
-                        <div class="header"><span>Dark</span></div>
+                        <div class="header">
+                            <span>Dark</span>
+                        </div>
                         <button class=''>common</button>
                         <button class='mrm-button--primary'>primary</button>
                         <button class='mrm-button--accent'>accent</button>
@@ -122,7 +158,9 @@
                     </div>
 
                     <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                        <div class="header"><span>Dark and ripple</span></div>
+                        <div class="header">
+                            <span>Dark and ripple</span>
+                        </div>
                         <button ripple class=''>common</button>
                         <button ripple class='mrm-button--primary'>primary</button>
                         <button ripple class='mrm-button--accent'>accent</button>
@@ -135,19 +173,39 @@
                     </div>
 
                     <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                        <div class="header"><span>Dark button icon</span></div>
-                        <button class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <div class="header">
+                            <span>Dark button icon</span>
+                        </div>
+                        <button class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button class='mrm-button--primary mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button class='mrm-button--accent mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button disabled class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
                     </div>
 
                     <div class="mrm-card mrm-dark  mrm-background--grey-700">
-                        <div class="header"><span>Dark button icon and ripple</span></div>
-                        <button ripple class='mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple class='mrm-button--primary mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple class='mrm-button--accent mrm-button--icon'><i class='material-icons'>star</i></button>
-                        <button ripple disabled class='mrm-button--icon'><i class='material-icons'>star</i></button>
+                        <div class="header">
+                            <span>Dark button icon and ripple</span>
+                        </div>
+                        <button ripple class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple class='mrm-button--primary mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple class='mrm-button--accent mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
+                        <button ripple disabled class='mrm-button--icon'>
+                            <i class='material-icons'>star</i>
+                        </button>
                     </div>
 
                     <div ripple class="mrm-card"></div>

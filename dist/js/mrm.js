@@ -11,6 +11,8 @@ function __getMrm() {
         useUpdate: false,
         updateInterval: 100,
 
+        drawerContentButtonClose: false,
+
         drawer: null,
         drawerButton: null,
         drawerActive: false,
@@ -55,6 +57,18 @@ function __getMrm() {
                         if (event.isTrusted && event.target && event.target === window._mrm.drawer) {
                             window._mrm.drawerAction(false);
                         }
+                    });
+                }
+            }
+
+            var drawerContentButtons = document.querySelectorAll('.drawer a');
+            if (this.drawerContentButtonClose && drawerContentButtons.length > 0 && this.drawer !== null) {
+                var i = 0,
+                    len = drawerContentButtons.length;
+
+                for (; i < len; i++) {
+                    drawerContentButtons[i].addEventListener('click', function (event) {
+                        window._mrm.drawerAction(!1);
                     });
                 }
             }

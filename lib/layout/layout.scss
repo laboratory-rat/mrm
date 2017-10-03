@@ -1,4 +1,4 @@
-.layout{
+.layout {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -6,17 +6,18 @@
     padding: 0;
 }
 
-.layout.box>.content{
+.layout.box>.content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.layout.toolbar--fixed>.toolbar{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-.layout.toolbar--fixed>.content{
-    margin-top: $toolbarHeight;
+.layout.layout--toolbar-fixed {
+    >.toolbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    >.content {
+        margin-top: $toolbarHeight;
+    }
 }
