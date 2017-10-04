@@ -19,6 +19,13 @@ ul.mrm-list {
     .mrm-list--caption{
       display: none;
     }
+
+    .mrm-list--secondary{
+      position: absolute;
+      right: 0;
+      height: 100%;
+      color: $paletteBlack-54 !important;
+    }
   }
   >.mrm-list--element-1-line {
     height: 48px;
@@ -32,9 +39,5 @@ ul.mrm-list {
       color: $paletteBlack-54;
     }
   }
-  a,
-  a:visited {
-    text-decoration: none;
-    color: inherit;
-  }
+
 }

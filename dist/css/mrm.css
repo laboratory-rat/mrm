@@ -1810,6 +1810,11 @@ body {
       font-weight: normal;
       height: 64px; } }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
 .layout {
   position: relative;
   width: 100%;
@@ -2054,6 +2059,11 @@ ul.mrm-list {
       height: 48px; }
     ul.mrm-list > .mrm-list--element .mrm-list--caption {
       display: none; }
+    ul.mrm-list > .mrm-list--element .mrm-list--secondary {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      color: rgba(0, 0, 0, 0.54) !important; }
   ul.mrm-list > .mrm-list--element-1-line {
     height: 48px; }
     ul.mrm-list > .mrm-list--element-1-line i.mrm-list--avatar {
@@ -2064,10 +2074,6 @@ ul.mrm-list {
       line-height: 32px;
       text-align: center;
       color: rgba(0, 0, 0, 0.54); }
-  ul.mrm-list a,
-  ul.mrm-list a:visited {
-    text-decoration: none;
-    color: inherit; }
 
 .mrm-grid {
   display: grid;
