@@ -3,7 +3,7 @@ button {
     height: $buttonHeight;
     margin: $buttonMargin;
     text-transform: uppercase;
-    font: $buttonFontSize $robotoMedium;
+    font: $buttonFontSize $robotoRegular;
     padding: $buttonPadding;
     min-width: calc(#{$buttonInnerMinWidth} + #{nth($buttonPadding, 2)} * 2);
     background-color: $paletteEmpty;
